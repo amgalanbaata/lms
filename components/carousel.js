@@ -21,13 +21,12 @@ export default function MyCarousel() {
     };
     console.log(page)
     return (
-        <main className="relative flex h-[calc(100vh-70px)] w-screen flex-col justify-center items-center">
-            <div className="absolute w-full h-full">
+        <main className=" relative flex h-[calc(100vh-70px)] w-full flex-col justify-center items-center">
+            <div className="w-full absolute h-full">
                 <Image
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-center sizes='100vw'"
                     sizes="100vw"
-                    full
-                    alt="Image"
+                    full alt="Image"
                     src={`/image/image${page}.jpg`}
                     width={1000}
                     height={1000}
@@ -39,18 +38,18 @@ export default function MyCarousel() {
             {/* left arrow */}
             <div
                 onClick={handlePrevPage}
-                className="z-10 fixed borrom-1/2 left-4 text-2xl font-semibold"
+                className="z-10 absolute bottom-1/2 left-4 text-2xl font-semibold"
             >
-                <span className="line-block transition-transrorm hover:-translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-ociolet-50o0">
+                <span className="line-block transition-transrorm hover:-translate-x-1 hover:text-blue-300 motion-reduce:transform-none cursor-pointer hover:text-ociolet-50o0">
                     &lt;-{" "}
                 </span>
             </div>
             {/* right arrow */}
             <div
                 onClick={handleNextPage}
-                className="z-10 fixed borrom-1/2 right-4 text-2xl font-semibold"
+                className="z-10 absolute bottom-1/2 right-4 text-2xl font-semibold"
             >
-                <span className="line-block transition-transrorm hover:-translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-ociolet-50o0">
+                <span className="line-block transition-transrorm hover:-translate-x-1 hover:text-blue-300 motion-reduce:transform-none cursor-pointer ">
                     -&gt;{" "}
                 </span>
             </div>

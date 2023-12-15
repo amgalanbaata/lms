@@ -2,9 +2,12 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { GiBattleAxe } from "react-icons/gi";
+import { motion } from "framer-motion";
+import MenuRes from "./navbarResponsive";
 export default function Navbar() {
+
     return (
-        <div className="w-full fixed top-0 left-0 z-10">
+        <div className="w-screen fixed top-0 left-0 z-10">
             <div className=" bg-red-900 h-14 flex justify-between">
                 <div className="flex mt-5 md:mt-3">
                     <div className="md:flex">
@@ -23,7 +26,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex">
                     <div>
-                        <button className="hidden md:mr-4 md:block text-red-900 bg-white rounded-3xl pl-4 pr-4 mt-3 hover:text-white hover:bg-red-800">
+                        <button className="hidden md:mr-4 md:block text-red-900 bg-gray-200 rounded-3xl pl-4 pr-4 mt-3 hover:text-white hover:bg-red-800">
                             Элсэлт
                         </button>
                     </div>
@@ -31,19 +34,17 @@ export default function Navbar() {
                         <FaUser />
                     </a>
                     <div>
-                        <button className="hidden md:mr-4 md:block  text-red-900 bg-white rounded-3xl mt-3 px-2 hover:text-white hover:bg-red-800">
+                        <button className="hidden md:mr-4 md:block  text-red-900 bg-gray-200 rounded-3xl mt-3 px-2 hover:text-white hover:bg-red-800">
                             Бүртгүүлэх
                         </button>
                     </div>
                 </div>
             </div>
-            <div className="w-full  bg-white h-14 md:h24 flex md:justify-around items-center justify-between">
+            <div className="w-full  bg-gray-200 h-14 md:h24 flex md:justify-around items-center justify-between">
                 <div>
                     <GiBattleAxe className="text-red-900 text-2xl ml-5" />
                 </div>
-                <div className="">
-                <h1 className="bg-blue-900">mini menu</h1>
-                </div>
+                <MenuRes/>
                 <div className="hidden md:block text-red-900  justify-around">
                     <a className="mr-5 hover:text-black" href="">
                         Бүээгдэхүүн
