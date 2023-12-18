@@ -3,19 +3,21 @@ import { IoMdMail } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { GiBattleAxe } from "react-icons/gi";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import MenuRes from "./navbarResponsive";
+import NewAccount from "./login/newAccount";
 export default function Navbar() {
 
     return (
         <div className="w-screen fixed top-0 left-0 z-10">
-            <div className=" bg-red-900 h-14 flex justify-between">
+            <div className="bg-blue-500 h-14 flex justify-between">
                 <div className="flex mt-5 md:mt-3">
                     <div className="md:flex">
                         <h1 className="hidden md:block ml-5">холбоо барих</h1>
                         <FaPhoneAlt className="ml-5 md: mt-1 mr-2" />
-                        <a className="hidden md:block hover:underline" href="">
+                        <p className="hidden md:block" href="">
                             9999999
-                        </a>
+                        </p>    
                     </div>
                     <div className="ml-5 flex">
                         <IoMdMail className="md: mt-1 mr-1" />
@@ -24,41 +26,48 @@ export default function Navbar() {
                         </a>
                     </div>
                 </div>
-                <div className="flex">
+                <div className="flex md:mr-10">
                     <div>
-                        <button className="hidden md:mr-4 md:block text-red-900 bg-gray-200 rounded-3xl pl-4 pr-4 mt-3 hover:text-white hover:bg-red-800">
-                            Элсэлт
+                        <button className="hidden md:mr-4 md:block blue-500 text-blue-500 bg-gray-50 rounded-3xl pl-4 pr-4 mt-3 hover:text-white hover:bg-blue-500 border-2 transition ease-out duration-500">
+                            Нэвтрэх
                         </button>
                     </div>
                     <a className="md:hidden mt-4 mr-5" href="">
                         <FaUser />
                     </a>
                     <div>
-                        <button className="hidden md:mr-4 md:block  text-red-900 bg-gray-200 rounded-3xl mt-3 px-2 hover:text-white hover:bg-red-800">
+                        <button className="hidden md:mr-4 md:block  text-blue-500 bg-gray-50 rounded-3xl mt-3 px-2 hover:text-white hover:bg-blue-500 hover:duration-200  border-2 hover:border-white focus:outline-none focus:ring transition ease-out duration-500">
                             Бүртгүүлэх
                         </button>
                     </div>
                 </div>
             </div>
-            <div className="w-full  bg-gray-200 h-14 md:h24 flex md:justify-around items-center justify-between">
+            <div className="w-full  bg-gray-200 h-14 md:h24 flex md:justify-between items-center justify-between">
                 <div>
-                    <GiBattleAxe className="text-red-900 text-2xl ml-5" />
+                    {/* <img src="/images/LMS_logo.png" width={30} /> */}
+                    <Image
+                    src="/images/LMS_logo.png"
+                    width={40}
+                    height={30}           
+                                alt="logo"
+                    className="focus:border-none active:border-none text-myColor text-2xl ml-5 md:ml-10"
+                    />
                 </div>
                 <MenuRes/>
-                <div className="hidden md:block text-red-900  justify-around">
-                    <a className="mr-5 hover:text-black" href="">
-                        Бүээгдэхүүн
+                <div className="hidden md:block text-blue-500 justify-around md:mr-10">
+                    <a className="mr-5 hover:underline font-bold font-momo" href="">
+                        Бүтээгдэхүүн
                     </a>
-                    <a className="mr-5 hover:text-black" href="">
+                    <a className="mr-5 hover:underline font-bold" href="">
                         мэдээ
                     </a>
-                    <a className="mr-5 hover:text-black" href="">
+                    <a className="mr-5 hover:underline font-bold" href="">
                         Бидний тухай
                     </a>
-                    <a className="mr-5 hover:text-black" href="">
+                    <a className="mr-5 hover:underline font-bold" href="">
                         Дэлгэрэнгүй мэдээлэл
                     </a>
-                    <a className="mr-5 hover:text-black" href="">
+                    <a className="mr-5 hover:underline font-bold" href="">
                         тусламж
                     </a>
                 </div>

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Component from "@/components/component";
-
+import background from "../public/images/backGround.jpeg"
 export default function Home() {
     return (
-        <main>
-                <Component />
+        <main className="">
+                <Component />    
         </main>
     );
 }
