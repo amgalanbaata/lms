@@ -12,14 +12,14 @@ export default function Navbar() {
         <div className="w-screen fixed top-0 left-0 z-10">
             <div className="bg-myColor  h-14 flex justify-between">
                 <div className="flex mt-5 md:mt-3">
-                    <div className="md:flex">
+                    <div className="md:flex text-white">
                         <h1 className="hidden md:block ml-5">холбоо барих</h1>
                         <FaPhoneAlt className="ml-5 md: mt-1 mr-2" />
                         <p className="hidden md:block" href="">
                             9999999
                         </p>    
                     </div>
-                    <div className="ml-5 flex">
+                    <div className="ml-5 flex text-white">
                         <IoMdMail className="md: mt-1 mr-1" />
                         <a className="hidden md:block hover:underline" href="">
                             gmail.com
