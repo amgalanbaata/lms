@@ -28,7 +28,7 @@ export default function MyCarousel() {
                     sizes="100vw"
                     full alt="Images"
                     // src={`/image/images${page}.jpg`}
-                    src="/public/images/images5.webp"
+                    src={`/images/images${page}.webp`}
                     width={1000}
                     height={1000}
                 />
