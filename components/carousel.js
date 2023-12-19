@@ -27,7 +27,8 @@ export default function MyCarousel() {
                     className="w-full h-full object-cover object-center sizes='100vw'"
                     sizes="100vw"
                     full alt="Image"
-                    src={`/image/image${page}.jpg`}
+                    // src={`/image/image${page}.jpg`}
+                    src={`/images/image${page}.webp`}
                     width={1000}
                     height={1000}
                 />
