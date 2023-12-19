@@ -6,16 +6,16 @@ import { GiBattleAxe } from "react-icons/gi";
 export default function Footer(){
     return(
         <footer class="bg-myColor dark:bg-gray-900">
-            <div className="w-full h-24 flex items-center justify-center bg-gray-50">
-        <hr className="w-2/5 bg-myColor mr-3 h-0.5 border-0" />
-        <GiBattleAxe className="text-myColor text-3xl md:text-5xl rounded-3xl "/>
-       <hr className="w-2/5 bg-myColor h-0.5 border-0 ml-3" />
-    </div>
+            <div className="w-full h-24 flex items-center justify-center bg-slate-50">
+                    <hr className="w-2/5 bg-black mr-3 h-0.5 border-0" />
+                    <img src="/images/LMS_logo.png" width={60} alt=""/>
+                    <hr className="w-2/5 bg-black h-0.5 ml-3 border-0"/>
+                </div>
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
               <div class="mb-6 md:mb-0">
                   <a href="" class="flex items-center">
-                      <GiBattleAxe className="text-white text-3xl"/>
+                  <img src="/images/LMS_logo.white.png" width={60} alt=""/>
                       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ml-1">Companies</span>
                   </a>
               </div>

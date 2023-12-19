@@ -7,19 +7,12 @@ export default function ImageSlide(){
   <div class="mx-auto max-w-6xl px-6 w-full bg-myColor">
     <div class="flex [&:hover>div]:w-16 [&>div:hover]:w-[30rem]">
       <div class="group relative h-96 w-[30rem] cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
-        <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src="https://cdn.pixabay.com/photo/2016/01/31/19/41/apple-1172060_960_720.jpg" alt="" />
+        <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src="https://resources.owllabs.com/hs-fs/hubfs/webex%20best%20video%20meeting%20apps.jpg?width=672&name=webex%20best%20video%20meeting%20apps.jpg" alt="" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute inset-x-5 bottom-6">
             <div class="flex gap-3 text-white">
-              <svg width="48" height="48" viewBox="0 0 32 32">
-                <path d="M11 2H2v9h2V4h7V2z" fill="currentColor" />
-                <path d="M2 21v9h9v-2H4v-7H2z" fill="currentColor" />
-                <path d="M30 11V2h-9v2h7v7h2z" fill="currentColor" />
-                <path d="M21 30h9v-9h-2v7h-7v2z" fill="currentColor" />
-                <path d="M25.49 10.13l-9-5a1 1 0 0 0-1 0l-9 5A1 1 0 0 0 6 11v10a1 1 0 0 0 .51.87l9 5a1 1 0 0 0 1 0l9-5A1 1 0 0 0 26 21V11a1 1 0 0 0-.51-.87zM16 7.14L22.94 11L16 14.86L9.06 11zM8 12.7l7 3.89v7.71l-7-3.89zm9 11.6v-7.71l7-3.89v7.71z" fill="currentColor" />
-              </svg>
               <div>
-                <p class="font-sembold text-xl text-gray-100">Beyond Builder</p>
+                <img src="/images/LMS_logo.white.png" width={30} alt="" />
                 <p class="text-gray-300">Better Design</p>
               </div>
             </div>
@@ -34,7 +27,7 @@ export default function ImageSlide(){
         </div>
       </div>
       <div class="group relative h-96 w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
-        <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src="https://cdn.pixabay.com/photo/2022/08/17/15/46/family-7392843_960_720.jpg" alt="" />
+        <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src="https://assets-global.website-files.com/5fac161927bf86485ba43fd0/654bd0e27104a3b3f1945291_4_Webex%20Meetings.webp" alt="" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute inset-x-5 bottom-6">
             <div class="flex gap-3 text-white">
@@ -42,7 +35,7 @@ export default function ImageSlide(){
                
               </svg>
               <div>
-                <p class="font-sembold text-xl text-gray-100">Familly and Sunset</p>
+              <img src="/images/LMS_logo.white.png" width={30} alt="" />
                 <p class="text-gray-300">Better Design</p>
               </div>
             </div>
@@ -58,7 +51,7 @@ export default function ImageSlide(){
           <div class="absolute inset-x-5 bottom-6">
             <div class="flex gap-3 text-white">
               <div>
-                <p class="font-sembold text-xl text-gray-100">Tailwind CSS</p>
+              <img src="/images/LMS_logo.white.png" width={30} alt="" />
                 <p class="text-gray-300">Better Design</p>
               </div>
             </div>
@@ -74,7 +67,7 @@ export default function ImageSlide(){
           <div class="absolute inset-x-5 bottom-6">
             <div class="flex gap-3 text-white">
               <div>
-                <p class="font-sembold text-xl text-gray-100">Tailwind CSS</p>
+              <img src="/images/LMS_logo.white.png" width={30} alt="" />
                 <p class="text-gray-300">Better Design</p>
               </div>
             </div>

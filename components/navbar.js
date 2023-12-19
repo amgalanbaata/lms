@@ -54,7 +54,7 @@ export default function Navbar() {
                     />
                 </div>
                 <MenuRes/>
-                <div className="hidden md:block text-blue-500 justify-around md:mr-10">
+                <div className="hidden md:block text-gray-800 justify-around md:mr-10">
                     <a className="mr-5 hover:underline font-bold font-momo" href="">
                         Бүтээгдэхүүн
                     </a>
