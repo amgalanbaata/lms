@@ -5,7 +5,7 @@ import { GiBattleAxe } from "react-icons/gi";
 
 export default function Footer(){
     return(
-        <footer class="bg-myColor dark:bg-gray-900">
+        <footer class="bg-myColor ">
             <div className="w-full h-24 flex items-center justify-center bg-slate-50">
                     <hr className="w-2/5 bg-black mr-3 h-0.5 border-0" />
                     <img src="/images/LMS_logo.png" width={60} alt=""/>
@@ -57,7 +57,7 @@ export default function Footer(){
           </div>
           <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div class="sm:flex sm:items-center sm:justify-between">
-              <span class="text-sm text-gray-50 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Next.js™</a>. All Rights Reserved.
+              <span class="text-sm text-gray-50 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">Next.js™</a>. All Rights Reserved.
               </span>
               <div class="flex mt-4 sm:justify-center sm:mt-0">
                   <a href="#" class="text-gray-50 hover:text-gray-600 dark:hover:text-white">
@@ -96,6 +96,13 @@ export default function Footer(){
     </footer>
     )
 }
+
+
+{/* <div className="mt-24 inline-block">
+            <div className="rounded-full bg-white p-1 w-[120px] absolute mt-[235px] ml-[230px]"><img className="" src="/images/LMS_logo.png" alt="" /></div>
+            <img src="https://plama-react.envytheme.com/_next/static/media/app-integrations.3373ca92.png" alt="" />
+          </div> */}
+
 
 
 

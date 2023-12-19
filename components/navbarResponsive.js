@@ -8,7 +8,7 @@ export default function MenuRes(){
     console.log(myButton)
     return(
         <div className="inline md:hidden">
-            <button onClick={()=> setMyButton(!myButton)} className="text-myColor 
+            <button onClick={()=> setMyButton(!myButton)} className="text-black
                 mr-4 text-2xl">{myButton ? (<GiHamburgerMenu />):(<BiMenuAltLeft/>)}</button>
     <motion.div 
     initial={{ opacity: 0, scale: 0.5 }}

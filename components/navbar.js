@@ -10,7 +10,7 @@ export default function Navbar() {
 
     return (
         <div className="w-screen fixed top-0 left-0 z-10">
-            <div className="bg-blue-500 h-14 flex justify-between">
+            <div className="bg-myColor  h-14 flex justify-between">
                 <div className="flex mt-5 md:mt-3">
                     <div className="md:flex">
                         <h1 className="hidden md:block ml-5">холбоо барих</h1>
@@ -28,34 +28,27 @@ export default function Navbar() {
                 </div>
                 <div className="flex md:mr-10">
                     <div>
-                        <button className="hidden md:mr-4 md:block blue-500 text-blue-500 bg-gray-50 rounded-3xl pl-4 pr-4 mt-3 hover:text-white hover:bg-blue-500 border-2 transition ease-out duration-500">
-                            Нэвтрэх
+                        <button className="hidden md:mr-4 md:block blue-500 text-myColor bg-gray-50 rounded-3xl pl-4 pr-4 mt-3 hover:text-white hover:bg-myColor border-2 transition ease-out duration-500">
+                            <strong>Нэвтрэх</strong>
                         </button>
                     </div>
                     <a className="md:hidden mt-4 mr-5" href="">
                         <FaUser />
                     </a>
                     <div>
-                        <button className="hidden md:mr-4 md:block  text-blue-500 bg-gray-50 rounded-3xl mt-3 px-2 hover:text-white hover:bg-blue-500 hover:duration-200  border-2 hover:border-white focus:outline-none focus:ring transition ease-out duration-500">
-                            Бүртгүүлэх
+                        <button className="hidden md:mr-4 md:block  text-myColor bg-gray-50 rounded-3xl mt-3 px-2 hover:text-white hover:bg-myColor hover:duration-200  border-2 hover:border-white focus:outline-none focus:ring transition ease-out duration-500">
+                            <strong>Бүртгүүлэх</strong>
                         </button>
                     </div>
                 </div>
             </div>
-            <div className="w-full  bg-gray-200 h-14 md:h24 flex md:justify-between items-center justify-between">
-                <div>
-                    {/* <img src="/images/LMS_logo.png" width={30} /> */}
-                    <Image
-                    src="/images/LMS_logo.png"
-                    width={40}
-                    height={30}           
-                                alt="logo"
-                    className="focus:border-none active:border-none text-myColor text-2xl ml-5 md:ml-10"
-                    />
+            <div className="w-full  bg-gray-200 h-14 md:h-24 flex md:justify-between items-center justify-between shadow-md">
+                <div className="ml-5">
+                    <img className="md:h-20 h-18 md:w-20 h-10" src="/images/LMS_logo.png"  alt="" />
                 </div>
                 <MenuRes/>
-                <div className="hidden md:block text-gray-800 justify-around md:mr-10">
-                    <a className="mr-5 hover:underline font-bold font-momo" href="">
+                <div className="hidden md:block text-myColor justify-around md:mr-10 md:text-xl">
+                    <a className="mr-5 hover:underline md:font-3xl font-bold  " href="">
                         Бүтээгдэхүүн
                     </a>
                     <a className="mr-5 hover:underline font-bold" href="">
