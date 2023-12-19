@@ -32,8 +32,8 @@ export default function MyCarousel() {
                     width={1000}
                     height={1000}
                 />
-                <div className="absolute bottom-8 left-10 py-3 px-6 bg-[#rgb0000007c] rounded-lg">
-                    <h2 className="text-4xl"><strong>INTERNATIONAL</strong></h2>
+                <div className="flex justify-end absolute mb-10 bottom-8 right-10 py-3 px-6 bg-[#rgb0000007c] rounded-lg z-10">
+                    <img className="w-10 md:w-18" src="/images/LMS_logo.white.png" width={60} alt="" />
                 </div>
             </div>
             {/* left arrow */}
