@@ -18,12 +18,12 @@ export default function News(){
                     </div>
                     <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
                     
-                    <div className="shadow-slate-50 md:flex rounded-md text-black md:rounded-l-2xl md:justify-around mb-10 md:mb-5 md:mt-5">
-                    <div className="grid  justify-self-stretch md:justify-center md:items-center md:text-center md:inline h-auto md:w-2/6">
+                    <div className="shadow-slate-50 md:flex text-black md:rounded-l-2xl md:justify-around mb-10 md:mb-5 md:mt-5">
+                    <div className="grid  justify-self-stretch md:justify-center md:items-center md:text-center md:inline md:w-2/6">
                     <h1 className="md:mt-10 md:mb-10 mb-5 mt-5"><strong>Чатлах</strong></h1>
                     <p className="text-gray-600 text-justify">Видео болон аудио нь уулзалтын гайхалтай туршлагын үндэс болдог ч чат нь хэрэглэгчдэд санал бодлоо хуваалцах, уулзалтыг бүхэлд нь тасалдуулахгүйгээр тусдаа харилцан яриа өрнүүлэхэд тусалдаг.</p>
                     </div>
-                    <img className="rounded-l-md" src="/image/newsImage.3.png" width={600} height={200} alt="" />
+                    <img className="rounded-xl" src="/image/newsImage.3.png" width={600} height={200} alt="" />
                     </div>
                     <hr className="my-8 py-25"/>
                     <div className="shadow-slate-50 md:flex rounded-md text-black md:rounded-l-2xl md:justify-around md:mb-10 md:mt-5">

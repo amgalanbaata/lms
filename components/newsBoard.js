@@ -16,8 +16,8 @@ export default  function NewsBoard(){
                         <img className="rounded-sm shadow-md" src="/image/screenShot2.png" width={1000} height={1000} alt="" />
                         
                     </div>
-                    <div className="md:inline justify-center md:w-4/5 ">
-                <div className="mt-16 text-center items-center justify-around md:m-10 mb-10 md:mb-28 ">
+                    <div className="md:inline justify-center md:w-4/5 h-full mb-10">
+                <div className="mt-16 text-center items-center justify-around md:m-10 mb-10 ">
                     <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3"><strong>Онлайн видео уулзалтууд</strong></h1>
                     <p className="text-[#012A4A] text-start ml-2">
 Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх. Ширээний камер эсвэл гадаад камерыг онлайн видео уулзалтад ашиглаж, төөрөгдөл, ойлгомжгүй  байдалд орон зай үлдээлгүй нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
