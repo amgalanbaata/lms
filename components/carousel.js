@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 // import Image from "./image";
 import Image from "next/image";
@@ -21,7 +21,11 @@ export default function MyCarousel() {
     };
     console.log(page)
     return (
-        <main className=" relative flex h-[calc(100vh-70px)] w-full flex-col justify-center items-center">
+        <motion.main className=" relative flex h-[calc(100vh-70px)] w-full flex-col justify-center items-center"
+        initial={{x: "100vw"}}
+        animate={{x: 0}}
+        transition={{type: "spring", delay: 0.5}}
+        >
             <div className="w-full absolute h-full">
                 <Image
                     className="w-full h-full object-cover object-center sizes='100vw'"
@@ -32,7 +36,7 @@ export default function MyCarousel() {
                     width={1000}
                     height={1000}
                 />
-                <div className="flex justify-end absolute mb-10 bottom-8 right-10 py-3 px-6 bg-[#rgb0000007c] rounded-lg z-10">
+                <div className="justify-end absolute mb-10 bottom-8 hidden md:block right-10 py-3 px-6 bg-[#rgb0000007c] rounded-lg z-10">
                     <img className="w-10 md:w-18" src="/images/LMS_logo.white.png" width={60} alt="" />
                 </div>
             </div>
@@ -54,6 +58,6 @@ export default function MyCarousel() {
                     -&gt;{" "}
                 </span>
             </div>
-        </main>
+        </motion.main>
     );
 }

@@ -1,7 +1,8 @@
 "use client"
-// import { FaPhoneAlt } from "react-icons/fa";
-// import { IoMdMail } from "react-icons/io";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 import { GiBattleAxe } from "react-icons/gi";
+import { motion } from "framer-motion";
 
 export default function Footer(){
     return(
@@ -59,6 +60,21 @@ export default function Footer(){
           <div class="sm:flex sm:items-center sm:justify-between">
               <span class="text-sm text-gray-50 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">Next.js™</a>. All Rights Reserved.
               </span>
+              <div><div className="flex mt-5 md:mt-3">
+                    <div className="md:flex text-white">
+                        {/* <h1 className="hidden md:block ml-5">холбоо барих</h1> */}
+                        <FaPhoneAlt className=" md:mt-1 md:mr-1" />
+                        <p className="hidden md:block" href="">
+                            9999999
+                        </p>    
+                    </div>
+                    <div className="ml-5 flex text-white">
+                        <IoMdMail className="md:mt-1 md:mr-1" />
+                        <a className="hidden md:block hover:underline" href="">
+                            gmail.com
+                        </a>
+                    </div>
+                </div></div>
               <div class="flex mt-4 sm:justify-center sm:mt-0">
                   <a href="#" class="text-gray-50 hover:text-gray-600 dark:hover:text-white">
                       <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">

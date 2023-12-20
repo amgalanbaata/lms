@@ -7,21 +7,16 @@ export default function MenuRes(){
     const [myButton, setMyButton]=useState(true);
     console.log(myButton)
     return(
-        <div className="inline md:hidden">
+        <div className="">
             <button onClick={()=> setMyButton(!myButton)} className="text-black
                 mr-4 text-2xl">{myButton ? (<GiHamburgerMenu />):(<BiMenuAltLeft/>)}</button>
-    <motion.div 
-    initial={{ opacity: 0, scale: 0.5 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 1 }}
-    >
-            <div className={`w-60 items-center text-start grid grid-cols-1 bg-myColor text-gray-50 top-24 rounded-l-2xl absolute right-0 h-60 ${myButton ? 'hidden' : 'block'}`}>
+    <motion.div className={`w-screen items-center text-start grid grid-cols-1 bg-myColor text-gray-50 top-14 rounded-l-2xl absolute right-0 h-60 ${myButton ? 'hidden' : 'block'}`}>
+
         <a className="ml-3 hover:underline font-bold" href="">Бүээгдэхүүн</a>
         <a className="ml-3 hover:underline font-bold"  href="">мэдээ</a>
         <a className="ml-3 hover:underline font-bold"  href="">Бидний тухай</a>
         <a className="ml-3 hover:underline font-bold"  href="">Дэлгэрэнгүй мэдээлэл</a>
         <a className="ml-3 hover:underline font-bold"  href="">тусламж</a>
-        </div>
                 </motion.div>
         
         </div>
