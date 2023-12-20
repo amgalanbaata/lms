@@ -17,7 +17,7 @@ export default function Footer(){
               <div class="mb-6 md:mb-0">
                   <a href="" class="flex items-center">
                   <img src="/images/LMS_logo.white.png" width={60} alt=""/>
-                      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ml-1">Companies</span>
+                      <span class="self-center text-2xl font-semibold whitespace-nowrap text-white ml-1">Companies</span>
                   </a>
               </div>
               <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
