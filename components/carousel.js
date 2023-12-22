@@ -21,10 +21,7 @@ export default function MyCarousel() {
     };
     console.log(page)
     return (
-        <motion.main className=" relative flex h-[calc(100vh-70px)] w-full flex-col justify-center items-center"
-        initial={{x: "100vw"}}
-        animate={{x: 0}}
-        transition={{type: "spring", delay: 0.5}}
+        <main className=" relative flex h-[calc(100vh-70px)] w-full flex-col justify-center items-center"
         >
             <div className="w-full absolute h-full">
                 <Image
@@ -58,6 +55,6 @@ export default function MyCarousel() {
                     -&gt;{" "}
                 </span>
             </div>
-        </motion.main>
+        </main>
     );
 }

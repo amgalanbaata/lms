@@ -44,21 +44,33 @@ export default function Navbar() {
                 <div className="flex md:mr-10">
                 
                     <div>
-                        <button className="hidden md:mr-4 md:block blue-500 text-slate-50 bg-[#3968d9] rounded-2xl px-4 py-2  hover:text-white hover:bg-[#1937e9] border-2 transition ease-out duration-500">
+                        <motion.button className="hidden md:mr-4 md:block blue-500 text-slate-50 bg-[#3968d9] rounded-2xl px-4 py-2  hover:text-white hover:bg-[#1937e9] border-2 transition ease-out duration-500"
+                        whileHover={{scale: 1.1,
+                            textShadow: "0px  0px 8px rgb(255, 255, 255)",
+                            boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}>
                             <strong>Нэвтрэх</strong>
-                        </button>
+                        </motion.button>
                     </div>
                     <div>
-                        <button className="hidden md:mr-4 md:block  text-slate-50 bg-[#3968d9] rounded-xl px-4 py-2 hover:text-white hover:bg-[#1937e9] hover:duration-200  border-2 hover:border-white focus:outline-none focus:ring transition ease-out duration-500">
+                        <motion.button className="hidden md:mr-4 md:block  text-slate-50 bg-[#3968d9] rounded-xl px-4 py-2 hover:text-white hover:bg-[#1937e9] hover:duration-200  border-2 hover:border-white focus:outline-none focus:ring transition ease-out duration-500"
+                        whileHover={{scale: 1.1,
+                        textShadow: "0px  0px 8px rgb(255, 255, 255)",
+                        boxShadow: "0px 0px 8px rgb(255,255,255)",
+                    }}>
                             <strong>Бүртгүүлэх</strong>
-                        </button>
+                        </motion.button>
                     </div>
                     </div>
                     
                 </motion.div>
-                <div className=" inline md:hidden">
+                <motion.div className=" inline mt-2 md:hidden"
+                initial={{x: "100vw"}}
+                animate={{x: 0}}
+                transition={{ delay: 0.2}}
+                >
                 <MenuRes/>
-                </div>
+                </motion.div>
         </div>
     );
 }

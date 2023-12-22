@@ -3,7 +3,7 @@
 
 export default function ImageSlide(){
     return(
-        <div class="inline min-h-screen items-center justify-center bg-[#A9D6E5]">
+        <div class="flex min-h-screen items-center justify-center bg-[#A9D6E5]">
   <div class="mx-auto max-w-6xl px-6 w-full bg-[#A9D6E5]">
     <div class="flex [&:hover>div]:w-16 [&>div:hover]:w-[30rem]">
       <div class="group relative h-96 w-[30rem] cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
@@ -13,15 +13,8 @@ export default function ImageSlide(){
             <div class="flex gap-3 text-white">
               <div>
                 <img src="/images/LMS_logo.white.png" width={30} alt="" />
-                <p class="text-gray-300">Better Design</p>
+                <p class="text-gray-300">Learning Management System</p>
               </div>
-            </div>
-            <div class="flex justify-end gap-3 text-gray-200">
-              <svg width="22" height="22" viewBox="0 0 512 512">
-                
-              </svg>
-  
-              <svg width="20" height="20" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="M7.5 14.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Zm0 0v-8a2 2 0 0 1 2-2h.5m-5 4h5" /></svg>
             </div>
           </div>
         </div>
@@ -31,16 +24,10 @@ export default function ImageSlide(){
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute inset-x-5 bottom-6">
             <div class="flex gap-3 text-white">
-              <svg width="48" height="48" viewBox="0 0 32 32">
-               
-              </svg>
               <div>
               <img src="/images/LMS_logo.white.png" width={30} alt="" />
-                <p class="text-gray-300">Better Design</p>
+                <p class="text-gray-300">Learning Management System</p>
               </div>
-            </div>
-            <div class="flex justify-end gap-3 text-gray-200">
-              <svg width="20" height="20" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="M7.5 14.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Zm0 0v-8a2 2 0 0 1 2-2h.5m-5 4h5" /></svg>
             </div>
           </div>
         </div>
@@ -52,12 +39,9 @@ export default function ImageSlide(){
             <div class="flex gap-3 text-white">
               <div>
               <img src="/images/LMS_logo.white.png" width={30} alt="" />
-                <p class="text-gray-300">Better Design</p>
+                <p class="text-gray-300">Learning Management System</p>
               </div>
-            </div>
-            <div class="flex justify-end gap-3 text-gray-200">
-              <svg width="20" height="20" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="M7.5 14.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Zm0 0v-8a2 2 0 0 1 2-2h.5m-5 4h5" /></svg>
-            </div>
+            </div> 
           </div>
         </div>
       </div>
@@ -68,11 +52,8 @@ export default function ImageSlide(){
             <div class="flex gap-3 text-white">
               <div>
               <img src="/images/LMS_logo.white.png" width={30} alt="" />
-                <p class="text-gray-300">Better Design</p>
+                <p class="text-gray-300">Learning Management System</p>
               </div>
-            </div>
-            <div class="flex justify-end gap-3 text-gray-200">
-              <svg width="20" height="20" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="M7.5 14.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Zm0 0v-8a2 2 0 0 1 2-2h.5m-5 4h5" /></svg>
             </div>
           </div>
         </div>
