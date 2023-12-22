@@ -25,12 +25,12 @@ export default function ImageSlide(){
   }
     return(
       <div>
-      <div className="w-full h-24 flex items-center justify-center bg-slate-100">
-      <hr className="w-2/5 bg-black mr-3 h-0.5 border-0" />
-      <img src="/images/LMS_logo.png" width={60} alt="" />
-        <hr className="w-2/5 bg-black h-0.5 ml-3 border-0"/>
+      <div className="w-full h-24 flex items-center justify-center bg-myColor">
+      <hr className="w-2/5 bg-gray-100 mr-3 h-0.5 border-0" />
+      <img src="/images/LMS_logo.white.png" width={60} alt="" />
+        <hr className="w-2/5 bg-gray-100 h-0.5 ml-3 border-0"/>
  </div>
-        <div class="inline md:flex h-full items-center justify-center bg-myColor"> 
+        <div class="inline md:flex h-full items-center justify-center pb-24 bg-myColor"> 
   <div class="mx-auto max-w-6xl px-6 w-full bg-myColor py-10 md:w-3/6">
     <div class="flex [&:hover>div]:w-16 [&>div:hover]:w-[30rem]">
       <div class="group relative h-96 w-[30rem] cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
@@ -93,20 +93,15 @@ export default function ImageSlide(){
       </div>
     </div>
   </div>
-  <motion.div className="md:w-2/5 mx-auto md:rounded-2xl" 
-  whileHover={{scale: 1,
-    textShadow: "0px  0px 2px rgb(255, 255, 255)",
-    boxShadow: "0px 0px 2px rgb(255,255,255)",
-}}
-  >
+  <div className="md:w-2/5 mx-auto md:rounded-2xl">
     <div>
     {/* <h1>Эрхэм зорилго</h1> */}
     <h1 className={`text-4xl font-serif  justify-center bg-myColor text-start md:rounded-2xl md:p-24 shadow-lg p-3 text-slate-50${container, item}`}>МЭДЛЭГЭЭРЭЭ БАЯЛАГ БҮТЭЭЖ, МАНЛАЙЛАХ ЧАДВАРТАЙ, ЁС СУРТАХУУНТАЙ МЭРГЭЖИЛТЭН БЭЛТГЭНЭ</h1>
     </div>
-  </motion.div>
-  <div class="fixed bottom-10 right-10">
-    <p class="text-xl font-semibold text-white"><a href="" class="lowercase text-blue-500">Learning Managenent System</a></p>
   </div>
+  {/* <div class="fixed bottom-10 right-10">
+    <p class="text-xl font-semibold text-white"><a href="" class="lowercase text-blue-500">Learning Managenent System</a></p>
+  </div> */}
 </div>
 </div>
     )

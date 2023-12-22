@@ -15,12 +15,12 @@ export default  function NewsBoard(){
             
                     <div className="bg-[#012A4A] inline sm:flex items-center">
                         <motion.div className="text-4xl font-serif sm:mx-24 justify-center items-center inline md:rounded-2xl md:p-24 shadow-lg p-3"
-                        whileHover={{scale: 1,
-                            textShadow: "0px  0px 3px rgb(255, 255, 255)",
-                            boxShadow: "0px 0px 3px rgb(255,255,255)",}}
+                        // whileHover={{scale: 1,
+                        //     textShadow: "0px  0px 3px rgb(255, 255, 255)",
+                        //     boxShadow: "0px 0px 3px rgb(255,255,255)",}}                    
                         >
                             <h1 className="text-slate-100 sm:text-5xl sm:mb-16 text-center">Давуу тал</h1>
-                            <p className="text-slate-100 text-justify  sm:text-3xl">Та хотоос гадуур амьдардаг хайртай дотны хүмүүстэйгээ холбогдох, ажил дээрээ хамт олонтойгоо         синхрончлох эсвэл онлайн хичээлд суух гэж байгаа ч бай видео хурал энд байх болно.</p>
+                            <p className="text-slate-100 text-justify text-xl px-2 sm:text-3xl">Та хотоос гадуур амьдардаг хайртай дотны хүмүүстэйгээ холбогдох, ажил дээрээ хамт олонтойгоо         синхрончлох эсвэл онлайн хичээлд суух гэж байгаа ч бай видео хурал энд байх болно.</p>
                         </motion.div>
                         <img className="sm:w-2/4" src="/image/screenShot2.png" width={1000} height={1000} alt="" />
                         </div>
@@ -32,7 +32,7 @@ export default  function NewsBoard(){
                     <p className="text-[#012A4A] text-justify px-1">
 Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх. Ширээний камер эсвэл гадаад камерыг онлайн видео уулзалтад ашиглаж, төөрөгдөл, ойлгомжгүй  байдалд орон зай үлдээлгүй нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
                 </div>
-                <div className="text-[#012A4A] text-start  justify-around md:grid md:grid-cols-2 md:m-5 grid grid-cols-1 gap-8">
+                <div className="text-[#012A4A] text-start  justify-around md:grid md:grid-cols-2 md:m-5 grid grid-cols-1 gap-8 pb-5">
                     <div className="bg-slate-100 rounded-3xl p-3 md:p-8 shadow-lg hover:shadow-xl">
                         <h1 className="text-[#012A4A] text-2xl">Давуу тал</h1>
                     <p className="text-[#012A4A] text-justify">Та хотоос гадуур амьдардаг хайртай дотны хүмүүстэйгээ холбогдох, ажил дээрээ хамт олонтойгоо синхрончлох эсвэл онлайн хичээлд суух гэж байгаа ч бай видео хурал энд байх болно.</p></div>

@@ -15,63 +15,53 @@ export default function Navbar() {
     }
 
     return (
-        <div className="w-screen fixed z-40 bg-white  justify-between items-center h-14 md:h-24 flex shadow-xl">
-                <motion.div className="ml-5 flex"
+        <nav className="bg-white">
+        <div className="w-screen bg-white fixed z-40  justify-between items-center h-14 md:h-24 flex shadow-xl md:flex md:justify-between px-4">
+                <motion.div className="flex"
                 initial={{x: -250}}
-                animate={{x: -10}}
-                transition={{delay: 0.2}}
+                variants={{
+                    hidden: { opacity: 0, x: 75},
+                    visible: { opacity: 1, x: 0},
+                }}
+                animate="visible"
+                transition={{ duration: 0.5, delay: 0.25}}
                 >
-                    <img className="md:h-16 h-18 md:w-16 h-10 md:ml-10" src="/images/LMS_logo.png"  alt="" />
+                    <img className="md:h-16 h-18 md:w-16 h-10" src="/images/LMS_logo.png"  alt="" />
                 </motion.div>
-                <motion.div className="md:flex flex md:h-24 mt-5 items-center mb-0"
-                initial={{y: -100}}
-                animate={{y: -10}}
-                transition={{delay: 0.2}}
+                <motion.div className="md:flex flex md:h-24 items-center"
+                variants={{
+                    hidden: { opacity: 0, x: 75},
+                    visible: { opacity: 1, x: 0},
+                }}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.5, delay: 0.25}}
                 >
-                <div className="hidden md:block text-slate-900 md:mr-10 md:text-xl">
-                    {/* <div className="flex">
-                    <div >
-                    <a className="mr-5 md:font-2xl font-bold  underline-offset-2 text-[#012A4A] hover:duration-100" href="">
-                        Бүтээгдэхүүн
-                    </a>
-                    </div>
-                    <div >
-                        <a className="mr-5 text-[#012A4A] font-bold" href="">
-                        Мэдээ
-                    </a></div>
-                    <div
-                    ><a className="mr-5 font-bold text-[#012A4A] " href="">
-                        Бидний тухай
-                    </a></div>
-                    <div
-                    ><a className="mr-5 font-bold text-[#012A4A]  " href="">
-                        Тусламж
-                    </a></div>
-                    </div> */}
+                <div className="hidden md:block text-slate-900 md:mr-5 md:text-xl">
                         <div class="hidden w-full md:block md:w-auto">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-100 rounded-lg bg-slate-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="font-medium flex flex-col p-4 md:p-0  border border-slate-100 rounded-lg bg-slate-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+          <a href="#" class="block py-2 px-3 text-white bg-bColor rounded md:bg-transparent md:text-bColor md:p-0 hover:underline md:dark:text-bColor" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
         </li>
       </ul>
     </div>
                 </div>
-                <div className="flex md:mr-10">
+                <div className="flex">
                 
                     <div>
-                        <motion.button className="hidden md:mr-4 md:block text-slate-50 bg-[#3968d9] rounded-xl px-4 py-2  hover:text-white"
+                        <motion.button className="hidden md:mr-4 md:block text-slate-50 bg-bColor hover:bg-myColor rounded-md px-4 py-1  hover:text-white"
                         whileHover={{scale: 1,
                             textShadow: "0px  0px 2px rgb(255, 255, 255)",
                             boxShadow: "0px 0px 2px rgb(255,255,255)",
@@ -80,7 +70,7 @@ export default function Navbar() {
                         </motion.button>
                     </div>
                     <div>
-                        <motion.button className="hidden md:mr-4 md:block  text-slate-50 bg-[#3968d9] rounded-xl px-4 py-2  hover:border-white"
+                        <motion.button className="hidden md:mr-4 md:block  text-slate-50 bg-bColor hover:bg-myColor rounded-md px-4 py-1  hover:border-white"
                         whileHover={{scale: 1,
                         textShadow: "0px  0px 2px rgb(255, 255, 255)",
                         boxShadow: "0px 0px 2px rgb(255,255,255)",
@@ -91,13 +81,18 @@ export default function Navbar() {
                     </div>
                     
                 </motion.div>
-                <motion.div className=" inline mt-2 md:hidden"
-                initial={{x: "100vw"}}
-                animate={{x: 0}}
-                transition={{ delay: 0.2}}
+                <motion.div className="md:hidden"
+               variants={{
+                hidden: { opacity: 0, x: 75},
+                visible: { opacity: 1, x: 0},
+            }}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.5, delay: 0.25}}
                 >
                 <MenuRes/>
                 </motion.div>
         </div>
+        </nav>
     );
 }
