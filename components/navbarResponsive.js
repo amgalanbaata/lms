@@ -9,7 +9,7 @@ export default function MenuRes(){
     return(
         <div className="">
             <button onClick={()=> setMyButton(!myButton)} className="text-black
-                mr-4 text-2xl">{myButton ? (<GiHamburgerMenu />):(<BiMenuAltLeft/>)}</button>
+                text-2xl">{myButton ? (<GiHamburgerMenu />):(<BiMenuAltLeft/>)}</button>
     <motion.div className={`w-screen items-center text-start grid grid-cols-1 bg-myColor text-gray-50 top-14 rounded-l-2xl absolute right-0 h-60 ${myButton ? 'hidden' : 'block'}`}>
         
         <a className="ml-3 hover:underline font-bold" href="">Бүээгдэхүүн</a>
@@ -22,22 +22,3 @@ export default function MenuRes(){
         </div>
     )
 }
-// className="w-60 items-center text-start grid grid-cols-1 bg-red-900 text-white top-24 rounded-l-2xl absolute right-0 h-60"
-// <button className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border" onClick={() => setNavbar(!navbar)}>
-//     {navbar ? (<Image src="/close.svg" width={30} height={30} alt="logo" />) : ( <Image src="/hamburger-menu.svg" width={30} height={30} alt="logo" className="focus:border-none active:border-none"/>)}
-//                 </button><button
-//                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-//                   onClick={() => setNavbar(!navbar)}
-//                 >
-//                   {navbar ? (
-//                     <Image src="/close.svg" width={30} height={30} alt="logo" />
-//                   ) : (
-//                     <Image
-//                       src="/hamburger-menu.svg"
-//                       width={30}
-//                       height={30}
-//                       alt="logo"
-//                       className="focus:border-none active:border-none"
-//                     />
-//                   )}
-//                 </button>

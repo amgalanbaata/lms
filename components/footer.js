@@ -8,7 +8,7 @@ export default function Footer(){
     return(
         <footer class="bg-myColor ">
             
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="mx-auto w-full p-4 py-6 lg:py-8 max-w-96">
             <div class="md:flex md:justify-between">
               <div class="mb-6 md:mb-0">
                   <a href="" class="flex items-center">
@@ -59,19 +59,17 @@ export default function Footer(){
               <div><div className="flex mt-5 md:mt-3">
                     <div className="md:flex text-white">
                         {/* <h1 className="hidden md:block ml-5">холбоо барих</h1> */}
-                        <FaPhoneAlt className=" md:mt-1 md:mr-1" />
-                        <p className="hidden md:block" href="">
-                            9999999
-                        </p>    
+                        
                     </div>
                     <div className="ml-5 flex text-white">
-                        <IoMdMail className="md:mt-1 md:mr-1" />
-                        <a className="hidden md:block hover:underline" href="">
-                            gmail.com
-                        </a>
+                       
                     </div>
                 </div></div>
               <div class="flex mt-4 sm:justify-center sm:mt-0">
+                <a href=""><FaPhoneAlt className="text-gray-50 hover:text-gray-600 dark:hover:text-white w-4 h-4"/></a>
+                <a href=""> <IoMdMail className="text-gray-50 hover:text-gray-600 dark:hover:text-white w-4 h-4"/></a>
+              
+             
                   <a href="#" class="text-gray-50 hover:text-gray-600 dark:hover:text-white">
                       <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
                             <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>

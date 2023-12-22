@@ -1,61 +1,57 @@
-"use client";
-import { useEffect, useState } from "react";
-// import Image from "./image";
-import Image from "next/image";
-
+"use client"
+// import {Alert} from "flowbite"
+import { Carousel } from "flowbite"
+import {
+    CarouselItem,
+    CarouselOptions,
+    CarouselInterface,
+} from "flowbite"
+import { InstanceOptions } from 'flowbite';
 export default function MyCarousel() {
-    const [page, setPage] = useState (1);
-
-    useEffect(() => {
-        let int = setInterval(() => {
-            setPage((prev) => ((prev) + 1 >= 8 ? 1 : prev + 1));
-        },5000);
-            return () => clearInterval(int);
-    },[])
-    let handlePrevPage = () => {
-        setPage(prev => ((prev - 1) <= 0 ? 7 : prev -1));
-    };
-    let handleNextPage = () => {
-        setPage(prev => (prev + 1));
-    };
-    console.log(page)
-    return (
-        <main className=" relative flex h-[calc(50vh-70px)] md:h-[calc(100vh-70px)]  w-full flex-col justify-center items-center overflow-hidden" 
-        >
-            <div className="w-full absolute h-full"
-            // style={{ transform: `translateX(-${prev *100}%)` }}
-            >
-                <Image
-                    className="w-full h-full object-cover object-center md:sizes='100vw transition-transform ease-out duration-500 flex'"
-                    style={{transform: `translateX(-${page * 100}%)`}}
-                    sizes="100vw"
-                    full alt="Images"
-                    src={`/images/images${page}.webp`}
-                    width={1000}
-                    height={1000}
-                />
-                <div className="justify-end absolute mb-10 bottom-8 hidden md:block right-10 py-3 px-6 bg-[#rgb0000007c] rounded-lg z-30">
-                    <img className="w-10 md:w-18 z-30" src="/images/LMS_logo.white.png" width={60} alt="" />
-                </div>
-            </div>
-            {/* left arrow */}
-            <div
-                onClick={handlePrevPage}
-                className="z-20 absolute bottom-1/2 left-4 text-2xl font-semibold"
-            >
-                <span className="line-block transition-transrorm hover:-translate-x-1 hover:text-blue-300 motion-reduce:transform-none cursor-pointer hover:text-ociolet-50o0">
-                    &lt;-{" "}
-                </span>
-            </div>
-            {/* right arrow */}
-            <div
-                onClick={handleNextPage}
-                className="z-20 absolute bottom-1/2 right-4 text-2xl font-semibold"
-            >
-                <span className="line-block transition-transrorm hover:-translate-x-1 hover:text-blue-300 motion-reduce:transform-none cursor-pointer ">
-                    -&gt;{" "}
-                </span>
-            </div>
-        </main>
-    );
+    
+    return(
+            <div id="controls-carousel" className="relative w-full" data-carousel="static">
+    {/* <!-- Carousel wrapper --> */}
+    <div class="relative h-[calc(50vh-70px)] md:h-[calc(100vh-70px)]  overflow-hidden rounded-lg">
+         {/* <!-- Item 1 --> */}
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/images/images1.webp" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+        </div>
+        {/* <!-- Item 2 --> */}
+        <div className="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="/images/images2.webp" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+        </div>
+        {/* <!-- Item 3 --> */}
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/images/image3.webp" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+        </div>
+        {/* <!-- Item 4 --> */}
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/images/images4.webp" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+        </div>
+        {/* <!-- Item 5 --> */}
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/images/images5.webp" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+        </div>
+    </div>
+    {/* <!-- Slider controls --> */}
+    <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span className="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span className="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+        
+    )
 }
