@@ -14,6 +14,7 @@ export default function Component() {
             <News/>
             <NewsBoard/>
             <MySlider/>
+            <Navbar />
             <Footer/>
         </div>
     );

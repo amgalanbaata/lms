@@ -3,7 +3,7 @@ import Component from "@/components/component";
 export default function Home() {
     return (
         <main className="">
-                <Component />    
+                <Component />
         </main>
     );
 }
