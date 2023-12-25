@@ -6,46 +6,75 @@ import ImageSlide from "./imageSlide"
 import { motion } from "framer-motion"
 export default  function NewsBoard(){
     return (
-        <div className="w-full h-full">
+        <div className="w-full h-full bg-myColor">
             <div className="w-full h-24 flex items-center justify-center bg-myColor">
                      <hr className="w-2/5 bg-white mr-3 h-0.5 border-0" />
                      <img src="/images/LMS_logo.white.png" width={60} alt="" />
                        <hr className="w-2/5 bg-white h-0.5 ml-3 border-0"/>
                 </div>
             
-                    <div className="bg-myColor inline sm:flex items-center">
-                        <motion.div className="text-4xl font-serif sm:w-2/4 sm:leading-loose justify-center items-center inline md:rounded-2xl md:p-24 shadow-lg p-3">
-                            <h1 className="text-slate-100 sm:text-5xl sm:mb-16 text-center">Давуу тал</h1>
-                            <p className="text-slate-100 text-justify text-xl px-2 sm:text-3xl sm:leading-loose">Та хотоос гадуур амьдардаг хайртай дотны хүмүүстэйгээ холбогдох, ажил дээрээ хамт олонтойгоо синхрончлох эсвэл онлайн хичээлд суух гэж байгаа ч бай видео хурал энд байх болно.</p>
-                        </motion.div>
-                        <img className="sm:w-2/4" src="/image/screenShot2.png" width={1000} height={1000} alt="" />
+                    <div className="bg-myColor inline md:flex items-center h-full">
+                        <div className="text-4xl sm:w-2/4 sm:leading-loose justify-center items-center inline md:rounded-2xl md:p-24 shadow-lg p-3">
+                        <h1 className="sm:text-5xl slate-50 text-2xl md:py-10 text-center font-sans"><strong><i>LMS</i></strong>-д тавтай морил</h1>
+                            <div class="mx-auto md:inline max-w-6xl px-6 w-full bg-myColor py-10 md:w-2/4">
+    <div class=" flex [&:hover>div]:w-16 [&>div:hover]:w-[30rem]">
+      <div class="group relative h-96 w-[30rem] cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
+        <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src="/image/card1.jpg" alt="" />
+        <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
+          <div class="absolute inset-x-5 bottom-6">
+            <div class="flex gap-3 text-white">
+              <div>
+                <p className="text-2xl">Өндөр чанартай аудио</p>
+                <img src="/images/LMS_logo.white.png" width={30} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group relative h-96 w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
+        <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src="/image/card2.jpg" alt="" />
+        <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
+          <div class="absolute inset-x-5 bottom-6">
+            <div class="flex gap-3 text-white">
+              <div>
+              <p className="text-2xl">Вебинарын онцлогууд</p>
+              <img src="/images/LMS_logo.white.png" width={30} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group relative h-96 w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
+        <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src="/image/card3.jpg" alt="" />
+        <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
+          <div class="absolute inset-x-5 bottom-6">
+            <div class="flex gap-3 text-white">
+              <div>
+                <p className="text-2xl">Чатлах</p>
+              <img src="/images/LMS_logo.white.png" width={30} alt="" />
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="group relative h-96 w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
+        <img class="rounded-r-lg h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src="/image/card4.jpg" alt="" />
+        <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
+          <div class="absolute inset-x-5 bottom-6">
+            <div class="flex gap-3 text-white">
+              <div>
+                <p className="text-2xl">Хэрэглэгчийн дэмжлэг</p>
+              <img src="/images/LMS_logo.white.png" width={30} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
                         </div>
-                    
-
-                    {/* <div className="md:inline sm:inline justify-center md:w-4/5 px-2">
-                <div className="mt-16 text-center items-center justify-around md:m-10 mb-10 bg-slate-100 rounded-3xl p-3 md:p-10 shadow-lg hover:shadow-xl">
-                    <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 "><strong>Онлайн видео уулзалтууд</strong></h1>
-                    <p className="text-[#012A4A] text-justify px-1">
-Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх. Ширээний камер эсвэл гадаад камерыг онлайн видео уулзалтад ашиглаж, төөрөгдөл, ойлгомжгүй  байдалд орон зай үлдээлгүй нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
-                </div>
-                <div className="text-[#012A4A] text-start  justify-around md:grid md:grid-cols-2 md:m-5 grid grid-cols-1 gap-8 pb-5">
-                    <div className="bg-slate-100 rounded-3xl p-3 md:p-8 shadow-lg hover:shadow-xl">
-                        <h1 className="text-[#012A4A] text-2xl">Давуу тал</h1>
-                    <p className="text-[#012A4A] text-justify">Та хотоос гадуур амьдардаг хайртай дотны хүмүүстэйгээ холбогдох, ажил дээрээ хамт олонтойгоо синхрончлох эсвэл онлайн хичээлд суух гэж байгаа ч бай видео хурал энд байх болно.</p></div>
-                    <div className="bg-slate-100 rounded-3xl p-3 shadow-lg md:p-8 hover:shadow-xl">
-                        <h1 className="text-2xl">Өндөр чанартай аудио</h1>
-                        <p className="text-[#012A4A] text-justify">Гөлгөр холболтын хувьд хүн бүр таныг сонсож байгаа эсэхийг шалгахын тулд шаардлагагүй хэдэн минут зарцуулахын оронд та бэлэн болмогц уулзалтыг чанартай аудиогоор эхлүүлнэ. Чанартай аудио нь видео хурлын туршлагыг төгс болгодог.</p>
-                    </div>
-                    <div className="bg-slate-100 rounded-3xl p-3 shadow-lg md:p-8 hover:shadow-xl">
-                        <h1 className="text-2xl">Аюулгүй байдал</h1>
-                        <p className="text-[#012A4A] text-justify">Яг л нүүр тулсан уулзалтын нэгэн адил та бизнесийн санхүү, компанийн стратеги гэх мэт чухал мэдээллийг видео хурлаар хуваалцах нь ойлгомжтой. Тиймээс, хэрэв та үнэгүй видео хурлын програм хангамж ашиглаж байгаа бол таны сонгосон ямар ч сонголт таны өгөгдлийн аюулгүй байдлыг нэн тэргүүнд тавьж байгаа эсэхийг шалгаарай.</p>
-                    </div>
-                    <div className="bg-slate-100 rounded-3xl p-3 shadow-lg md:p-8 hover:shadow-xl">
-                        <h1 className="text-2xl">Хандахад хялбар</h1>
-                        <p className="text-[#012A4A] text-justify">Шилдэг үнэгүй видео хурлын программ хангамжийг хайж олохын зэрэгцээ уулзалтад нэгдэхийн тулд хэдхэн товшилтоор вэб хөтчөөс шууд хурал үүсгэж, ажиллуулах боломжийг танд олгоно.</p>
-                    </div>
-                </div>
-                </div> */}
+                        <img className="sm:w-2/4" src="/image/screenShot2.png" width={500} height={500} alt="" />
+                        </div>
         </div>
     )
 }

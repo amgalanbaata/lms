@@ -2,25 +2,88 @@
 import { GiBattleAxe } from "react-icons/gi";
 import { motion } from "framer-motion";
 import {useState} from "react"
-import { FaLongArrowAltRight } from "react-icons/fa";
-import { FaLongArrowAltLeft } from "react-icons/fa";
-import { FaLongArrowAltDown } from "react-icons/fa";
+import { FaLongArrowAltDown} from "react-icons/fa";
 import { FaLongArrowAltUp } from "react-icons/fa";
 
 export default function News(){
 
-// const [show, setShow]= useState (false);
-
+const [show, setShow]= useState (true);
 
     return(
-      <div className="bg-myColor h-full">
+      <div className="bg-slate-50 h-screen items-center justify-center my-auto">
 
-        <div className="sm:grid sm:grid-cols-2 gap-4 inline">
-            <div>
+        <div className="lg:flex lg:px-10 sm:grid sm:grid-cols-2 gap-4 inline my-auto">
+        <div class="group relative w-full cursor-pointer h-full overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
+        <img class=" object-cover transition-all  group-hover:scale-105" src="/image/card1.jpg" width={500} height={500} alt="" />
+        <div class="absolute inset-0  to-slate-50 group-hover:visible">
+          <div class=" sm:top-10">
+            <div class="flex gap-3 text-white justify-center">
+              <div>
+              <h1 className="text-xl md:text-2xl text-myColor font-sans mb-3 "><strong><i>Онлайн видео уулзалтууд</i></strong></h1>
+              <motion.button onClick={()=>setShow(!show)} className="text-myColor mx-auto"
+            whileHover={{scale: 1.1,}}
+              ><strong><i className="flex items-center">learn more{show?<FaLongArrowAltUp/>:<FaLongArrowAltDown/>}</i></strong></motion.button>
+              
+              <p className={`text-black text-justify sm:w-full p-5 sm:leading-loose sm:text-xl ${show ? "hidden" : "block"}`}>Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх.  нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
+                {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
+        <img class=" object-cover transition-all  group-hover:scale-125" src="/image/card2.jpg" width={500} height={500} alt="" />
+        <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
+          <div class="absolute inset-x-5 sm:top-10">
+            <div class="flex gap-3 text-white">
+              <div>
+              <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 "><strong><i>Онлайн видео уулзалтууд</i></strong></h1>
+              <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх.  нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
+                {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
+        <img class=" object-cover transition-all  group-hover:scale-125" src="/image/card3.jpg" width={500} height={500} alt="" />
+        <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
+          <div class="absolute inset-x-5 sm:top-10 lg:mt-96">
+            <div class="flex gap-3 text-white">
+              <div>
+              <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 "><strong><i>Онлайн видео уулзалтууд</i></strong></h1>
+              <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх.  нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
+                {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
+        <img class=" object-cover transition-all  group-hover:scale-125" src="/image/card4.jpg" width={500} height={500} alt="" />
+        <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
+          <div class="absolute inset-x-5 sm:top-10 lg:mt-96">
+            <div class="flex gap-3 text-white">
+              <div>
+              <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 "><strong><i>Онлайн видео уулзалтууд</i></strong></h1>
+              <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх.  нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
+                {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+            {/* <div>
                 <img src="/image/card1.jpg" height={1000} width={1000} alt="" />
                 <div class="absolute  bg-gradient-to-b from-green-500/20 to-black">
-          <div class="absolute inset-x-5 bottom-6">
-            <div class="inline gap-3 text-black">
+          <div class="absolute bottom-6">
+            <div class=" text-black">
               <div>
                 <p>Маш сайн видео хурлын систем нь өөр өөр зурвасын өргөнд сайн ажиллаж, олон тохиргооны сонголтоор хангаж, сайн чанарын видео хүргэхийн тулд төхөөрөмжийн камертай сайн синк хийх ёстой.</p>
                 <img src="/images/LMS_logo.white.png" width={30} alt="" />
@@ -37,7 +100,7 @@ export default function News(){
             </div>
             <div>
                 <img src="/image/card4.jpg" height={1000} width={1000} alt="" />
-            </div>
+            </div> */}
 
 
         </div>
