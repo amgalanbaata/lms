@@ -6,27 +6,23 @@ import ImageSlide from "./imageSlide"
 import { motion } from "framer-motion"
 export default  function NewsBoard(){
     return (
-        <div className="w-full h-full bg-[#012A4A]">
-            <div className="w-full h-24 flex items-center justify-center bg-gray-50">
-                     <hr className="w-2/5 bg-black mr-3 h-0.5 border-0" />
-                     <img src="/images/LMS_logo.png" width={60} alt="" />
-                       <hr className="w-2/5 bg-black h-0.5 ml-3 border-0"/>
+        <div className="w-full h-full">
+            <div className="w-full h-24 flex items-center justify-center bg-myColor">
+                     <hr className="w-2/5 bg-white mr-3 h-0.5 border-0" />
+                     <img src="/images/LMS_logo.white.png" width={60} alt="" />
+                       <hr className="w-2/5 bg-white h-0.5 ml-3 border-0"/>
                 </div>
             
-                    <div className="bg-[#012A4A] inline sm:flex items-center">
-                        <motion.div className="text-4xl font-serif sm:mx-24 justify-center items-center inline md:rounded-2xl md:p-24 shadow-lg p-3"
-                        // whileHover={{scale: 1,
-                        //     textShadow: "0px  0px 3px rgb(255, 255, 255)",
-                        //     boxShadow: "0px 0px 3px rgb(255,255,255)",}}                    
-                        >
+                    <div className="bg-myColor inline sm:flex items-center">
+                        <motion.div className="text-4xl font-serif sm:w-2/4 sm:leading-loose justify-center items-center inline md:rounded-2xl md:p-24 shadow-lg p-3">
                             <h1 className="text-slate-100 sm:text-5xl sm:mb-16 text-center">Давуу тал</h1>
-                            <p className="text-slate-100 text-justify text-xl px-2 sm:text-3xl">Та хотоос гадуур амьдардаг хайртай дотны хүмүүстэйгээ холбогдох, ажил дээрээ хамт олонтойгоо         синхрончлох эсвэл онлайн хичээлд суух гэж байгаа ч бай видео хурал энд байх болно.</p>
+                            <p className="text-slate-100 text-justify text-xl px-2 sm:text-3xl sm:leading-loose">Та хотоос гадуур амьдардаг хайртай дотны хүмүүстэйгээ холбогдох, ажил дээрээ хамт олонтойгоо синхрончлох эсвэл онлайн хичээлд суух гэж байгаа ч бай видео хурал энд байх болно.</p>
                         </motion.div>
                         <img className="sm:w-2/4" src="/image/screenShot2.png" width={1000} height={1000} alt="" />
                         </div>
                     
 
-                    <div className="md:inline sm:inline justify-center md:w-4/5 px-2">
+                    {/* <div className="md:inline sm:inline justify-center md:w-4/5 px-2">
                 <div className="mt-16 text-center items-center justify-around md:m-10 mb-10 bg-slate-100 rounded-3xl p-3 md:p-10 shadow-lg hover:shadow-xl">
                     <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 "><strong>Онлайн видео уулзалтууд</strong></h1>
                     <p className="text-[#012A4A] text-justify px-1">
@@ -49,7 +45,7 @@ export default  function NewsBoard(){
                         <p className="text-[#012A4A] text-justify">Шилдэг үнэгүй видео хурлын программ хангамжийг хайж олохын зэрэгцээ уулзалтад нэгдэхийн тулд хэдхэн товшилтоор вэб хөтчөөс шууд хурал үүсгэж, ажиллуулах боломжийг танд олгоно.</p>
                     </div>
                 </div>
-                </div>
+                </div> */}
         </div>
     )
 }

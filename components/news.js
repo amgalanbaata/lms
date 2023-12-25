@@ -9,12 +9,60 @@ import { FaLongArrowAltUp } from "react-icons/fa";
 
 export default function News(){
 
-const [show, setShow]= useState (false);
+// const [show, setShow]= useState (false);
 
 
     return(
-      <div className="bg-slate-100 h-full">
-        <div className="md:pb-56 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:gap-10 justify-center items-center md:p-10 text-center p-2 bg-red-200">
+      <div className="bg-myColor h-full">
+
+        <div className="sm:grid sm:grid-cols-2 gap-4 inline">
+            <div>
+                <img src="/image/card1.jpg" height={1000} width={1000} alt="" />
+                <div class="absolute  bg-gradient-to-b from-green-500/20 to-black">
+          <div class="absolute inset-x-5 bottom-6">
+            <div class="inline gap-3 text-black">
+              <div>
+                <p>Маш сайн видео хурлын систем нь өөр өөр зурвасын өргөнд сайн ажиллаж, олон тохиргооны сонголтоор хангаж, сайн чанарын видео хүргэхийн тулд төхөөрөмжийн камертай сайн синк хийх ёстой.</p>
+                <img src="/images/LMS_logo.white.png" width={30} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+            </div>
+            <div>
+                <img src="/image/card2.jpg" height={1000} width={1000} alt="" />
+            </div>
+            <div>
+                <img src="/image/card3.jpg" height={1000} width={1000} alt="" />
+            </div>
+            <div>
+                <img src="/image/card4.jpg" height={1000} width={1000} alt="" />
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:gap-10 justify-center items-center md:p-10 text-center p-2">
 
                       <div class="max-w-sm bg-myColor border border-gray-200 dark:bg-myColor dark:border-gray-700 rounded-lg shadow-2xl">
                               <img className="lg:h-80 rounded-t-lg" src="/image/image5.webp" width={600} height={800} alt="" />
@@ -27,55 +75,10 @@ const [show, setShow]= useState (false);
                                       whileHover={{scale: 1.1,
                                       }}
                                       ><strong><i className="flex items-center">Read more{show ?(<FaLongArrowAltUp className="ml-2 hover:underline"/>):(<FaLongArrowAltDown className="ml-2 hover:underline"/>)}</i></strong></motion.button>
-                                      <p  class={`mb-3 font-normal text-gray-50 dark:text-gray-400 text-justify ${show ? "block" : "hidden"} `}>Ингэснээр өөр өөр хэмжээтэй хувь хүмүүс болон багуудад зориулсан видео хурлын програм хангамж юм. Та 2 эсвэл 100 хүнтэй уулзаж байгаа эсэхээс үл хамааран бусад видео хурлын хэрэглүүрээс үүдэлтэй техникийн толгой өвдөхгүйгээр аль болох энгийн уулзалт зохион байгуулж, явуулах боломжийг танд олгоно.</p>
+                                      <p  class={`mb-3 font-normal text-gray-50 dark:text-gray-400 text-justify cursor-pointer ${show ? "block" : "hidden"} `}>Ингэснээр өөр өөр хэмжээтэй хувь хүмүүс болон багуудад зориулсан видео хурлын програм хангамж юм. Та 2 эсвэл 100 хүнтэй уулзаж байгаа эсэхээс үл хамааран бусад видео хурлын хэрэглүүрээс үүдэлтэй техникийн толгой өвдөхгүйгээр аль болох энгийн уулзалт зохион байгуулж, явуулах боломжийг танд олгоно.</p>
                           </div>
                       </div>
-
-                      <div class="max-w-sm bg-myColor border border-gray-200 shadow dark:bg-myColor dark:border-gray-700 rounded-lg ">
-                              <img className="lg:h-80 rounded-t-lg" src="/image/image5.webp" width={600} height={800} alt="" />
-                          <div class="p-5">
-                              <a href="#">
-                                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-50 dark:text-white">Whereby</h5>
-                              </a>
-                              
-                              <motion.button onClick={()=>setShow(!show)} className=" mx-auto text-slate-50  rounded-xl py-2 "
-                                      whileHover={{scale: 1.1,
-                                      }}
-                                      ><strong><i className="flex items-center">Read more{show ?(<FaLongArrowAltLeft className="ml-2 hover:underline"/>):(<FaLongArrowAltRight className="ml-2 hover:underline"/>)}</i></strong></motion.button>
-                                      <p  class={`mb-3 font-normal text-gray-50 dark:text-gray-400 text-justify ${show ? "block" : "hidden"} `}>Ингэснээр өөр өөр хэмжээтэй хувь хүмүүс болон багуудад зориулсан видео хурлын програм хангамж юм. Та 2 эсвэл 100 хүнтэй уулзаж байгаа эсэхээс үл хамааран бусад видео хурлын хэрэглүүрээс үүдэлтэй техникийн толгой өвдөхгүйгээр аль болох энгийн уулзалт зохион байгуулж, явуулах боломжийг танд олгоно.</p>
-                          </div>
-                      </div>
-
-                      <div class="max-w-sm bg-myColor border border-gray-200 shadow dark:bg-myColor dark:border-gray-700 rounded-lg ">
-                              <img className="lg:h-80 rounded-t-lg" src="/image/image5.webp" width={600} height={800} alt="" />
-                          <div class="p-5">
-                              <a href="#">
-                                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-50 dark:text-white">Whereby</h5>
-                              </a>
-                              
-                              <motion.button onClick={()=>setShow(!show)} className=" mx-auto text-slate-50  rounded-xl py-2 "
-                                      whileHover={{scale: 1.1,
-                                      }}
-                                      ><strong><i className="flex items-center">Read more{show ?(<FaLongArrowAltLeft className="ml-2 hover:underline"/>):(<FaLongArrowAltRight className="ml-2 hover:underline"/>)}</i></strong></motion.button>
-                                      <p  class={`mb-3 font-normal text-gray-50 dark:text-gray-400 text-justify ${show ? "block" : "hidden"} `}>Ингэснээр өөр өөр хэмжээтэй хувь хүмүүс болон багуудад зориулсан видео хурлын програм хангамж юм. Та 2 эсвэл 100 хүнтэй уулзаж байгаа эсэхээс үл хамааран бусад видео хурлын хэрэглүүрээс үүдэлтэй техникийн толгой өвдөхгүйгээр аль болох энгийн уулзалт зохион байгуулж, явуулах боломжийг танд олгоно.</p>
-                          </div>
-                      </div>
-
-                      <div class="max-w-sm bg-myColor border border-gray-200 shadow dark:bg-myColor dark:border-gray-700 rounded-lg ">
-                              <img className="lg:h-80 rounded-t-lg" src="/image/image5.webp" width={600} height={800} alt="" />
-                          <div class="p-5">
-                              <a href="#">
-                                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-50 dark:text-white">Whereby</h5>
-                              </a>
-                              
-                              <motion.button onClick={()=>setShow(!show)} className=" mx-auto text-slate-50  rounded-xl py-2 "
-                                      whileHover={{scale: 1.1,
-                                      }}
-                                      ><strong><i className="flex items-center">Read more{show ?(<FaLongArrowAltLeft className="ml-2 hover:underline"/>):(<FaLongArrowAltRight className="ml-2 hover:underline"/>)}</i></strong></motion.button>
-                                      <p  class={`mb-3 font-normal text-gray-50 dark:text-gray-400 text-justify ${show ? "block" : "hidden"} `}>Ингэснээр өөр өөр хэмжээтэй хувь хүмүүс болон багуудад зориулсан видео хурлын програм хангамж юм. Та 2 эсвэл 100 хүнтэй уулзаж байгаа эсэхээс үл хамааран бусад видео хурлын хэрэглүүрээс үүдэлтэй техникийн толгой өвдөхгүйгээр аль болох энгийн уулзалт зохион байгуулж, явуулах боломжийг танд олгоно.</p>
-                          </div>
-                      </div>
-                </div>
+                </div> */}
          </div>
     )
 };

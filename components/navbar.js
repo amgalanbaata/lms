@@ -16,7 +16,7 @@ export default function Navbar() {
 
     return (
         <nav className="bg-white">
-        <div className="w-screen bg-white  justify-between items-center h-14 md:h-24 flex shadow-xl md:flex md:justify-between px-4">
+        <div className="w-screen bg-white fixed z-40  justify-between items-center h-14 md:h-24 flex shadow-xl md:flex md:justify-between px-4">
                 <motion.div className="flex"
                 initial={{x: -250}}
                 variants={{

@@ -30,7 +30,7 @@ export default function ImageSlide(){
       <img src="/images/LMS_logo.white.png" width={60} alt="" />
         <hr className="w-2/5 bg-gray-100 h-0.5 ml-3 border-0"/>
  </div>
-        <div class="inline md:flex h-full items-center justify-center pb-24 bg-myColor"> 
+        <div class="inline md:flex h-screen items-center justify-center pb-24 bg-myColor"> 
   <div class="mx-auto max-w-6xl px-6 w-full bg-myColor py-10 md:w-3/6">
     <div class=" flex [&:hover>div]:w-16 [&>div:hover]:w-[30rem]">
       <div class="group relative h-96 w-[30rem] cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
@@ -89,10 +89,10 @@ export default function ImageSlide(){
       </div>
     </div>
   </div>
-  <div className="md:w-2/5 mx-auto md:rounded-2xl">
+  <div className="md:w-3/6 mx-auto md:rounded-2xl">
     <div>
     {/* <h1>Эрхэм зорилго</h1> */}
-    <h1 className={`text-4xl font-serif  justify-center bg-myColor text-start md:rounded-2xl md:p-24 shadow-lg p-3 text-slate-50${container, item}`}>МЭДЛЭГЭЭРЭЭ БАЯЛАГ БҮТЭЭЖ, МАНЛАЙЛАХ ЧАДВАРТАЙ, ЁС СУРТАХУУНТАЙ МЭРГЭЖИЛТЭН БЭЛТГЭНЭ</h1>
+    <h1 className="text-4xl font-serif  justify-center bg-myColor  sm:text-center md:rounded-2xl md:px-24 md:py-16 shadow-lg p-3 text-slate-50 md:leading-loose">МЭДЛЭГЭЭРЭЭ БАЯЛАГ БҮТЭЭЖ, МАНЛАЙЛАХ ЧАДВАРТАЙ, ЁС СУРТАХУУНТАЙ МЭРГЭЖИЛТЭН БЭЛТГЭНЭ</h1>
     </div>
   </div>
   {/* <div class="fixed bottom-10 right-10">
