@@ -1,85 +1,158 @@
-"use client"
+"use client";
 import { GiBattleAxe } from "react-icons/gi";
 import { motion } from "framer-motion";
-import {useState} from "react"
-import { FaLongArrowAltDown} from "react-icons/fa";
+import { useState } from "react";
+import { FaLongArrowAltDown } from "react-icons/fa";
 import { FaLongArrowAltUp } from "react-icons/fa";
 
-export default function News(){
+export default function News() {
+    const [show, setShow] = useState(true);
 
-const [show, setShow]= useState (true);
+    return (
+        <div className="bg-slate-50 h-screen items-center justify-center my-auto">
+            <div className="lg:flex lg:px-10 sm:grid sm:grid-cols-2 gap-4 inline my-auto">
+                <div class="group relative w-full cursor-pointer h-full overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
+                    <img
+                        class=" object-cover transition-all  group-hover:scale-105"
+                        src="/image/card1.jpg"
+                        width={500}
+                        height={500}
+                        alt=""
+                    />
+                    <div class="absolute inset-0  to-slate-50 group-hover:visible">
+                        <div class=" sm:top-10">
+                            <div class="flex gap-3 text-white justify-center">
+                                <div>
+                                    <h1 className="text-xl md:text-2xl text-myColor font-sans mb-3 ">
+                                        <strong>
+                                            <i>Онлайн видео уулзалтууд</i>
+                                        </strong>
+                                    </h1>
+                                    <motion.button
+                                        onClick={() => setShow(!show)}
+                                        className="text-myColor mx-auto"
+                                        whileHover={{ scale: 1.1 }}
+                                    >
+                                        <strong>
+                                            <i className="flex items-center">
+                                                learn more
+                                                {show ? (
+                                                    <FaLongArrowAltUp />
+                                                ) : (
+                                                    <FaLongArrowAltDown />
+                                                )}
+                                            </i>
+                                        </strong>
+                                    </motion.button>
 
-    return(
-      <div className="bg-slate-50 h-screen items-center justify-center my-auto">
+                                    <p
+                                        className={`text-black text-justify sm:w-full p-5 sm:leading-loose sm:text-xl ${
+                                            show ? "hidden" : "block"
+                                        }`}
+                                    >
+                                        Онлайн видео хурлаар дамжуулан илүү сайн
+                                        харилцах, хамтран ажиллах, санаа бодлоо
+                                        илэрхийлэх. нүүр тулсан хамтын
+                                        ажиллагаагаар зөвшилцөлд хүрээрэй.
+                                    </p>
+                                    {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div className="lg:flex lg:px-10 sm:grid sm:grid-cols-2 gap-4 inline my-auto">
-        <div class="group relative w-full cursor-pointer h-full overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
-        <img class=" object-cover transition-all  group-hover:scale-105" src="/image/card1.jpg" width={500} height={500} alt="" />
-        <div class="absolute inset-0  to-slate-50 group-hover:visible">
-          <div class=" sm:top-10">
-            <div class="flex gap-3 text-white justify-center">
-              <div>
-              <h1 className="text-xl md:text-2xl text-myColor font-sans mb-3 "><strong><i>Онлайн видео уулзалтууд</i></strong></h1>
-              <motion.button onClick={()=>setShow(!show)} className="text-myColor mx-auto"
-            whileHover={{scale: 1.1,}}
-              ><strong><i className="flex items-center">learn more{show?<FaLongArrowAltUp/>:<FaLongArrowAltDown/>}</i></strong></motion.button>
-              
-              <p className={`text-black text-justify sm:w-full p-5 sm:leading-loose sm:text-xl ${show ? "hidden" : "block"}`}>Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх.  нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
-                {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
+                    <img
+                        class=" object-cover transition-all  group-hover:scale-125"
+                        src="/image/card2.jpg"
+                        width={500}
+                        height={500}
+                        alt=""
+                    />
+                    <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
+                        <div class="absolute inset-x-5 sm:top-10">
+                            <div class="flex gap-3 text-white">
+                                <div>
+                                    <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 ">
+                                        <strong>
+                                            <i>Онлайн видео уулзалтууд</i>
+                                        </strong>
+                                    </h1>
+                                    <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">
+                                        Онлайн видео хурлаар дамжуулан илүү сайн
+                                        харилцах, хамтран ажиллах, санаа бодлоо
+                                        илэрхийлэх. нүүр тулсан хамтын
+                                        ажиллагаагаар зөвшилцөлд хүрээрэй.
+                                    </p>
+                                    {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
-        <img class=" object-cover transition-all  group-hover:scale-125" src="/image/card2.jpg" width={500} height={500} alt="" />
-        <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
-          <div class="absolute inset-x-5 sm:top-10">
-            <div class="flex gap-3 text-white">
-              <div>
-              <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 "><strong><i>Онлайн видео уулзалтууд</i></strong></h1>
-              <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх.  нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
-                {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
+                    <img
+                        class=" object-cover transition-all  group-hover:scale-125"
+                        src="/image/card3.jpg"
+                        width={500}
+                        height={500}
+                        alt=""
+                    />
+                    <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
+                        <div class="absolute inset-x-5 sm:top-10 lg:mt-96">
+                            <div class="flex gap-3 text-white">
+                                <div>
+                                    <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 ">
+                                        <strong>
+                                            <i>Онлайн видео уулзалтууд</i>
+                                        </strong>
+                                    </h1>
+                                    <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">
+                                        Онлайн видео хурлаар дамжуулан илүү сайн
+                                        харилцах, хамтран ажиллах, санаа бодлоо
+                                        илэрхийлэх. нүүр тулсан хамтын
+                                        ажиллагаагаар зөвшилцөлд хүрээрэй.
+                                    </p>
+                                    {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
-        <img class=" object-cover transition-all  group-hover:scale-125" src="/image/card3.jpg" width={500} height={500} alt="" />
-        <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
-          <div class="absolute inset-x-5 sm:top-10 lg:mt-96">
-            <div class="flex gap-3 text-white">
-              <div>
-              <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 "><strong><i>Онлайн видео уулзалтууд</i></strong></h1>
-              <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх.  нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
-                {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
+                    <img
+                        class=" object-cover transition-all  group-hover:scale-125"
+                        src="/image/card4.jpg"
+                        width={500}
+                        height={500}
+                        alt=""
+                    />
+                    <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
+                        <div class="absolute inset-x-5 sm:top-10 lg:mt-96">
+                            <div class="flex gap-3 text-white">
+                                <div>
+                                    <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 ">
+                                        <strong>
+                                            <i>Онлайн видео уулзалтууд</i>
+                                        </strong>
+                                    </h1>
+                                    <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">
+                                        Онлайн видео хурлаар дамжуулан илүү сайн
+                                        харилцах, хамтран ажиллах, санаа бодлоо
+                                        илэрхийлэх. нүүр тулсан хамтын
+                                        ажиллагаагаар зөвшилцөлд хүрээрэй.
+                                    </p>
+                                    {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
-      <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
-        <img class=" object-cover transition-all  group-hover:scale-125" src="/image/card4.jpg" width={500} height={500} alt="" />
-        <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
-          <div class="absolute inset-x-5 sm:top-10 lg:mt-96">
-            <div class="flex gap-3 text-white">
-              <div>
-              <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 "><strong><i>Онлайн видео уулзалтууд</i></strong></h1>
-              <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">Онлайн видео хурлаар дамжуулан илүү сайн харилцах, хамтран ажиллах, санаа бодлоо илэрхийлэх.  нүүр тулсан хамтын ажиллагаагаар зөвшилцөлд хүрээрэй.</p>
-                {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-            {/* <div>
+                {/* <div>
                 <img src="/image/card1.jpg" height={1000} width={1000} alt="" />
                 <div class="absolute  bg-gradient-to-b from-green-500/20 to-black">
           <div class="absolute bottom-6">
@@ -101,31 +174,9 @@ const [show, setShow]= useState (true);
             <div>
                 <img src="/image/card4.jpg" height={1000} width={1000} alt="" />
             </div> */}
+            </div>
 
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:gap-10 justify-center items-center md:p-10 text-center p-2">
+            {/* <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:gap-10 justify-center items-center md:p-10 text-center p-2">
 
                       <div class="max-w-sm bg-myColor border border-gray-200 dark:bg-myColor dark:border-gray-700 rounded-lg shadow-2xl">
                               <img className="lg:h-80 rounded-t-lg" src="/image/image5.webp" width={600} height={800} alt="" />
@@ -142,16 +193,12 @@ const [show, setShow]= useState (true);
                           </div>
                       </div>
                 </div> */}
-         </div>
-    )
-};
+        </div>
+    );
+}
 
-
-
-
-
-
-{/* <div class="group relative h-96 w-96 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
+{
+    /* <div class="group relative h-96 w-96 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
 <img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src="/image/newsImage.5.jpg" alt="" />
 <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
   <div class="absolute inset-x-5 bottom-6">
@@ -165,14 +212,11 @@ const [show, setShow]= useState (true);
     </div>
   </div>
 </div>
-</div> */}
+</div> */
+}
 
-
-
-
-
-
-                    {/* <div className=" bg-slate-100 shadow-xl md:w-4/5 md:mx-auto md:flex  rounded-md text-black md:rounded-2xl md:justify-around md:py-24 mb-10">
+{
+    /* <div className=" bg-slate-100 shadow-xl md:w-4/5 md:mx-auto md:flex  rounded-md text-black md:rounded-2xl md:justify-around md:py-24 mb-10">
                         <div >
                         <img className="rounded-md" src="/image/newsImage.1.jpg" width={400} height={200} alt="" />
                         </div>
@@ -207,8 +251,10 @@ const [show, setShow]= useState (true);
                     </div>
                     <img className="rounded-md" src="/image/newsImage.4.png" width={600} height={400} alt="" />
                     </div>
-                    <hr className="w-4/5 mx-auto md:hidden border-[#3968d9]"/> */}
-                    {/* <div c
+                    <hr className="w-4/5 mx-auto md:hidden border-[#3968d9]"/> */
+}
+{
+    /* <div c
                     lassName="shadow-xl bg-slate-50 md:w-4/5 md:mx-auto justify-around md:flex rounded-md text-black md:rounded-2xl md:justify-around md:mb-10  mt-10 md:p-24">
                     <img className="rounded-md" src="/image/newsImage.5.jpg" width={600} height={400} alt="" />
                     <div className=" grid justify-self-stretch md:justify-center md:items-center md:text-center md:inline h-auto md:w-2/6">
@@ -217,4 +263,5 @@ const [show, setShow]= useState (true);
 Та өөрийн баг эсвэл хамтран ажиллагсадтайгаа бодит цаг хугацаанд санал бодлоо хуваалцах боломжтой биечлэн уулзах уулзалтанд оролцохоос өөр юу ч байхгүй.
 Гэхдээ бичлэг хийснээр тэр мэдлэгээ хадгалж, дараа нь хуваалцаж, уулзалтуудаа дахин дахин ашиглаж болох сургалтын хэрэглэгдэхүүн болгон хувиргах боломжтой.</p>
                     </div>
-                    </div> */}
+                    </div> */
+}

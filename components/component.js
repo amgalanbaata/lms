@@ -10,13 +10,13 @@ export default function Component() {
     return (
         <div>
             <Navbar />
-            <MyCarousel/>
-            <NewsBoard/>
-            <CardSlider/>
+            <MyCarousel />
+            <NewsBoard />
+            <CardSlider />
             {/* <News/> */}
-            <ImageSlide/>
-            <MySlider/>
-            <Footer/>
+            <ImageSlide />
+            <MySlider />
+            <Footer />
         </div>
     );
 }
