@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import MenuRes from "./navbarResponsive";
-// import Link from "next/link";
 export default function Navbar() {
     const bStyle = {
         whileHover: {
