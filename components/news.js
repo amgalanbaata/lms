@@ -4,21 +4,24 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import { FaLongArrowAltUp } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 
 export default function News() {
     const [show, setShow] = useState(true);
-
+    const [count, setCount] = useState(0);
     return (
-        <div className="bg-slate-50 h-screen items-center justify-center my-auto">
-            <div className="lg:flex lg:px-10 sm:grid sm:grid-cols-2 gap-4 inline my-auto">
-                <div class="group relative w-full cursor-pointer h-full overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
-                    <img
-                        class=" object-cover transition-all  group-hover:scale-105"
-                        src="/image/card1.jpg"
-                        width={500}
-                        height={500}
-                        alt=""
-                    />
+        <center className="bg-slate-50 h-screen items-center justify-center my-auto">
+            <center className="lg:flex lg:px-10 sm:grid sm:grid-cols-2 gap-4 inline my-auto justify-center items-center">
+                <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-xl sm:rounded-md">
+                    <div className="h-[600px]">
+                        <img
+                            class=" h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-105"
+                            src="/image/card1.jpg"
+                            width={500}
+                            height={500}
+                            alt=""
+                        />
+                    </div>
                     <div class="absolute inset-0  to-slate-50 group-hover:visible">
                         <div class=" sm:top-10">
                             <div class="flex gap-3 text-white justify-center">
@@ -55,213 +58,30 @@ export default function News() {
                                         илэрхийлэх. нүүр тулсан хамтын
                                         ажиллагаагаар зөвшилцөлд хүрээрэй.
                                     </p>
-                                    {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
+                                    <center className="bg-blue-800 text-2xl grid grid-cols-2 gap-2">
+                                        <button
+                                            onClick={() =>
+                                                setCount(
+                                                    !count
+                                                        ? count + 1
+                                                        : count - 1
+                                                )
+                                            }
+                                        >
+                                            <FaHeart
+                                                className={`${
+                                                    count ? "text-red-700" : ""
+                                                }`}
+                                            />
+                                        </button>
+                                        <p>{count}</p>
+                                    </center>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
-                    <img
-                        class=" object-cover transition-all  group-hover:scale-125"
-                        src="/image/card2.jpg"
-                        width={500}
-                        height={500}
-                        alt=""
-                    />
-                    <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
-                        <div class="absolute inset-x-5 sm:top-10">
-                            <div class="flex gap-3 text-white">
-                                <div>
-                                    <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 ">
-                                        <strong>
-                                            <i>Онлайн видео уулзалтууд</i>
-                                        </strong>
-                                    </h1>
-                                    <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">
-                                        Онлайн видео хурлаар дамжуулан илүү сайн
-                                        харилцах, хамтран ажиллах, санаа бодлоо
-                                        илэрхийлэх. нүүр тулсан хамтын
-                                        ажиллагаагаар зөвшилцөлд хүрээрэй.
-                                    </p>
-                                    {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
-                    <img
-                        class=" object-cover transition-all  group-hover:scale-125"
-                        src="/image/card3.jpg"
-                        width={500}
-                        height={500}
-                        alt=""
-                    />
-                    <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
-                        <div class="absolute inset-x-5 sm:top-10 lg:mt-96">
-                            <div class="flex gap-3 text-white">
-                                <div>
-                                    <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 ">
-                                        <strong>
-                                            <i>Онлайн видео уулзалтууд</i>
-                                        </strong>
-                                    </h1>
-                                    <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">
-                                        Онлайн видео хурлаар дамжуулан илүү сайн
-                                        харилцах, хамтран ажиллах, санаа бодлоо
-                                        илэрхийлэх. нүүр тулсан хамтын
-                                        ажиллагаагаар зөвшилцөлд хүрээрэй.
-                                    </p>
-                                    {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group relative h-full w-full cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-400">
-                    <img
-                        class=" object-cover transition-all  group-hover:scale-125"
-                        src="/image/card4.jpg"
-                        width={500}
-                        height={500}
-                        alt=""
-                    />
-                    <div class="invisible absolute inset-0 bg-gradient-to-b from-myColor/20 to-slate-50 group-hover:visible">
-                        <div class="absolute inset-x-5 sm:top-10 lg:mt-96">
-                            <div class="flex gap-3 text-white">
-                                <div>
-                                    <h1 className="text-3xl md:text-5xl  text-[#012A4A] font-sans mb-3 ">
-                                        <strong>
-                                            <i>Онлайн видео уулзалтууд</i>
-                                        </strong>
-                                    </h1>
-                                    <p className="text-black text-justify sm:w-full sm:leading-loose sm:text-xl">
-                                        Онлайн видео хурлаар дамжуулан илүү сайн
-                                        харилцах, хамтран ажиллах, санаа бодлоо
-                                        илэрхийлэх. нүүр тулсан хамтын
-                                        ажиллагаагаар зөвшилцөлд хүрээрэй.
-                                    </p>
-                                    {/* <img src="/images/LMS_logo.png" width={30} alt="" /> */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* <div>
-                <img src="/image/card1.jpg" height={1000} width={1000} alt="" />
-                <div class="absolute  bg-gradient-to-b from-green-500/20 to-black">
-          <div class="absolute bottom-6">
-            <div class=" text-black">
-              <div>
-                <p>Маш сайн видео хурлын систем нь өөр өөр зурвасын өргөнд сайн ажиллаж, олон тохиргооны сонголтоор хангаж, сайн чанарын видео хүргэхийн тулд төхөөрөмжийн камертай сайн синк хийх ёстой.</p>
-                <img src="/images/LMS_logo.white.png" width={30} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-            </div>
-            <div>
-                <img src="/image/card2.jpg" height={1000} width={1000} alt="" />
-            </div>
-            <div>
-                <img src="/image/card3.jpg" height={1000} width={1000} alt="" />
-            </div>
-            <div>
-                <img src="/image/card4.jpg" height={1000} width={1000} alt="" />
-            </div> */}
-            </div>
-
-            {/* <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:gap-10 justify-center items-center md:p-10 text-center p-2">
-
-                      <div class="max-w-sm bg-myColor border border-gray-200 dark:bg-myColor dark:border-gray-700 rounded-lg shadow-2xl">
-                              <img className="lg:h-80 rounded-t-lg" src="/image/image5.webp" width={600} height={800} alt="" />
-                          <div class="p-5">
-                              <a href="#">
-                                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-50 dark:text-white">Whereby</h5>
-                              </a>
-                              
-                              <motion.button onClick={()=>setShow(!show)} className=" mx-auto text-slate-50  rounded-xl py-2 "
-                                      whileHover={{scale: 1.1,
-                                      }}
-                                      ><strong><i className="flex items-center">Read more{show ?(<FaLongArrowAltUp className="ml-2 hover:underline"/>):(<FaLongArrowAltDown className="ml-2 hover:underline"/>)}</i></strong></motion.button>
-                                      <p  class={`mb-3 font-normal text-gray-50 dark:text-gray-400 text-justify cursor-pointer ${show ? "block" : "hidden"} `}>Ингэснээр өөр өөр хэмжээтэй хувь хүмүүс болон багуудад зориулсан видео хурлын програм хангамж юм. Та 2 эсвэл 100 хүнтэй уулзаж байгаа эсэхээс үл хамааран бусад видео хурлын хэрэглүүрээс үүдэлтэй техникийн толгой өвдөхгүйгээр аль болох энгийн уулзалт зохион байгуулж, явуулах боломжийг танд олгоно.</p>
-                          </div>
-                      </div>
-                </div> */}
-        </div>
+            </center>
+        </center>
     );
-}
-
-{
-    /* <div class="group relative h-96 w-96 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
-<img class="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src="/image/newsImage.5.jpg" alt="" />
-<div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
-  <div class="absolute inset-x-5 bottom-6">
-    <div class="flex gap-3 text-white">
-      <div>
-        <p className="text-slate-200 text-xs text-justify">Уулзалтын бичлэг хийх чадвар
-Та өөрийн баг эсвэл хамтран ажиллагсадтайгаа бодит цаг хугацаанд санал бодлоо хуваалцах боломжтой биечлэн уулзах уулзалтанд оролцохоос өөр юу ч байхгүй.
-Гэхдээ бичлэг хийснээр тэр мэдлэгээ хадгалж, дараа нь хуваалцаж, уулзалтуудаа дахин дахин ашиглаж болох сургалтын хэрэглэгдэхүүн болгон хувиргах боломжтой.</p>
-      <img src="/images/LMS_logo.white.png" width={30} alt="" />
-      </div>
-    </div>
-  </div>
-</div>
-</div> */
-}
-
-{
-    /* <div className=" bg-slate-100 shadow-xl md:w-4/5 md:mx-auto md:flex  rounded-md text-black md:rounded-2xl md:justify-around md:py-24 mb-10">
-                        <div >
-                        <img className="rounded-md" src="/image/newsImage.1.jpg" width={400} height={200} alt="" />
-                        </div>
-                    
-                    <div className=" grid  justify-self-stretch md:justify-center md:items-center  md:text-center md:inline h-auto md:w-3/6">
-                    <h1 className="md:mt-10 md:mb-10 mb-5 mt-5"><strong>Видео чадвар</strong></h1>
-                    <p className="text-gray-800 px-2 text-justify">Маш сайн видео хурлын систем нь өөр өөр зурвасын өргөнд сайн ажиллаж, олон тохиргооны сонголтоор хангаж, сайн чанарын видео хүргэхийн тулд төхөөрөмжийн камертай сайн синк хийх ёстой.</p>
-                    </div>
-                    </div>
-                    <hr className="my-6 w-4/5 md:hidden  border-[#3968d9]  sm:mx-auto lg:my-8"/>
-                                        
-                    <div className=" md:p-24 md:flex rounded-md text-black md:rounded-2xl md:justify-around mb-10 md:mb-10 md:mt-5 bg-slate-100 shadow-xl md:w-4/5 md:mx-auto">
-                    <div className="grid  justify-self-stretch md:justify-center md:items-center md:text-center md:inline h-auto md:w-2/6">
-                    <h1 className="md:mt-10 md:mb-10 mb-5 mt-5"><strong>Чатлах</strong></h1>
-                    <p className="text-gray-800 px-2 text-justify">Видео болон аудио нь уулзалтын гайхалтай туршлагын үндэс болдог ч чат нь хэрэглэгчдэд санал бодлоо хуваалцах, уулзалтыг бүхэлд нь тасалдуулахгүйгээр тусдаа харилцан яриа өрнүүлэхэд тусалдаг.</p>
-                    </div>
-                    <img className="rounded-md" src="/image/newsImage.3.png" width={600} height={600} alt="" />
-                    </div>
-                    <hr className="w-4/5 mx-auto border-[#3968d9] hidden md:hidden"/>
-                    <div className=" md:flex rounded-md text-black md:rounded-2xl md:justify-around md:mt-5 md:py-24 bg-slate-100 shadow-xl md:w-4/5 md:mx-auto mb-10">
-                    <img className="rounded-md" src="/image/newsImage.2.jpg" width={600} height={400} alt="" />
-                    <div className=" grid  justify-self-stretch md:justify-center md:items-center md:text-center md:inline h-auto md:w-2/6">
-                    <h1 className="md:mt-10 md:mb-10 mb-5 mt-5"><strong>Үнэгүй видео хурлын програмаас ямар боломжуудыг авч болох вэ?</strong></h1>
-                    <p className="text-gray-800 px-2 text-justify">Танд зөв програм сонгоход туслахын тулд бид видео хурлын програмыг сонгохдоо анхаарах ёстой хамгийн чухал шинж чанаруудыг жагсаав. Тиймээс, үнэ төлбөргүй гэдэг үгнээс гадна та юу авч байгаа, ямар үнэ цэнийг хүлээж болох талаар жинлэх нь чухал юм. Хэрэв та эцэст нь үнэ төлбөргүй шатлалаас цааш өргөжүүлэхээр шийдсэн бол энэ нь ялангуяа чухал юм.</p>
-                    </div>
-                    </div>
-                    <hr className="w-4/5 mx-auto border-[#3968d9] hiden md:hidden"/>
-                    <div className=" md:flex rounded-md justify-around text-black md:rounded-2xl md:justify-around md:mb-10 mb-5 md:p-24 bg-slate-100 shadow-xl md:w-4/5 md:mx-auto mt-10">
-                    <div className="grid  justify-self-stretch md:justify-center md:items-center md:text-center md:inline h-auto md:w-2/6">
-                    <h1 className="md:mt-10 md:mb-10 mb-5 mt-5"><strong>Дэлгэц хуваалцах</strong></h1>
-                    <p className="text-gray-800 px-2 text-justify">Дэлгэц хуваалцах нь аливаа харилцан ярианд контекст оруулах хүчирхэг хэрэгслийг санал болгодог. Сонирхолтой танилцуулга, үзүүлэнг хуваалцаж, тайлбар хийж, өөрийн дэлгэцээ хүн бүрт харагдахуйц дижитал самбар болгон хувиргаснаар багтайгаа виртуалаар холбогдоорой.</p>
-                    </div>
-                    <img className="rounded-md" src="/image/newsImage.4.png" width={600} height={400} alt="" />
-                    </div>
-                    <hr className="w-4/5 mx-auto md:hidden border-[#3968d9]"/> */
-}
-{
-    /* <div c
-                    lassName="shadow-xl bg-slate-50 md:w-4/5 md:mx-auto justify-around md:flex rounded-md text-black md:rounded-2xl md:justify-around md:mb-10  mt-10 md:p-24">
-                    <img className="rounded-md" src="/image/newsImage.5.jpg" width={600} height={400} alt="" />
-                    <div className=" grid justify-self-stretch md:justify-center md:items-center md:text-center md:inline h-auto md:w-2/6">
-                    <h1 className="md:mt-10 md:mb-10 mb-5 mt-5"><strong>Уулзалтын бичлэг хийх чадвар</strong></h1>
-                    <p className="text-gray-800 px-2 text-justify mb-5">Уулзалтын бичлэг хийх чадвар
-Та өөрийн баг эсвэл хамтран ажиллагсадтайгаа бодит цаг хугацаанд санал бодлоо хуваалцах боломжтой биечлэн уулзах уулзалтанд оролцохоос өөр юу ч байхгүй.
-Гэхдээ бичлэг хийснээр тэр мэдлэгээ хадгалж, дараа нь хуваалцаж, уулзалтуудаа дахин дахин ашиглаж болох сургалтын хэрэглэгдэхүүн болгон хувиргах боломжтой.</p>
-                    </div>
-                    </div> */
 }
