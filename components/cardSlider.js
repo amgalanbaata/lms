@@ -1,11 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import "../public/images/bg-image.webp";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaHeart } from "react-icons/fa";
 export default function CardSlider() {
     const [count, setCount] = useState(0);
-    const [color, setColor] = useState(false);
 
     console.log(count);
 
@@ -16,8 +15,8 @@ export default function CardSlider() {
                 <img src="/images/LMS_logo.white.png" width={60} alt="" />
                 <hr className="w-full bg-white h-0.5 ml-3 border-0" />
             </div>
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16 sm:p-10 lg:px-56">
-                <h1 className=" text-slate-50 grid sm:col-span-2 lg:col-span-3 text-4xl">
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16 sm:p-10 lg:px-24">
+                <h1 className=" text-slate-50 grid sm:col-span-2 lg:col-span-3 text-4xl ml-2">
                     <strong>Мэдээ мэдээлэл</strong>
                 </h1>
                 <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-xl sm:rounded-md">
@@ -47,10 +46,9 @@ export default function CardSlider() {
                         >
                             See More
                         </motion.button>
-                        <div className="grid grid-cols-2 gap-2 mx-7 justify-between mt-2">
+                        {/* <div className="grid grid-cols-2 gap-2 mx-7 justify-between mt-2">
                             <button
                                 className="text-2xl flex justify-center mt-1"
-                                // onChange={() => setColor(!color)}
                                 onClick={() =>
                                     setCount(!count ? count + 1 : count - 1)
                                 }
@@ -60,10 +58,10 @@ export default function CardSlider() {
                                 />
                             </button>
                             <p className="text-xl">{count}</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
-                <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 sm:rounded-md">
+                <div className=" group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 sm:rounded-md">
                     <div className="h-96">
                         <img
                             className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"

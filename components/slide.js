@@ -29,9 +29,7 @@ export default function MySlider() {
                             // boxShadow: "0px 0px 8px rgb(255,255,255)",
                         }}
                     >
-                        <strong>
-                            <i>About</i>
-                        </strong>
+                        <strong>дэлгэрэнгүй</strong>
                     </motion.button>
                     <p className="sm:text-2xl text-slate-500">
                         <strong className="text-blue-700 font-mono mr-2">

@@ -1,18 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import MenuRes from "./navbarResponsive";
+import { useState } from "react";
 export default function Navbar() {
-    const bStyle = {
-        whileHover: {
-            scale: 1.1,
-            textShadow: "0px  0px 8px rgb(255, 255, 255)",
-            boxShadow: "0px 0px 8px rgb(255,255,255)",
-        },
-    };
+    const [visible, setVisible] = useState(false);
 
     return (
-        <nav className="bg-white w-full">
-            <div className=" w-full bg-white fixed z-40  justify-between items-center h-14 sm:h-20 md:h-20 flex shadow-xl md:flex md:justify-between px-4">
+        <nav className=" w-full">
+            <div className="lg:px-24 w-full fixed z-40  justify-between items-center h-14 sm:h-20 md:h-20 flex shadow-xl md:flex md:justify-between px-4">
                 <motion.div
                     className="flex"
                     initial={{ x: -250 }}
@@ -41,7 +36,7 @@ export default function Navbar() {
                 >
                     <div className="hidden md:block text-slate-900 md:mr-5 md:text-xl">
                         <div className="hidden w-full md:block md:w-auto">
-                            <ul className="font-medium flex flex-col p-4 md:p-0  border border-slate-100 rounded-lg bg-slate-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <ul className="font-medium flex flex-col p-4 md:p-0  border border-slate-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                                 <li>
                                     <a
                                         href="#"
@@ -99,7 +94,7 @@ export default function Navbar() {
                         </div>
                         <div>
                             <motion.button
-                                className="hidden md:mr-4 md:block  text-slate-50 bg-bColor hover:bg-myColor rounded-md px-4 py-1  hover:border-white"
+                                className="hidden md:block  text-slate-50 bg-bColor hover:bg-myColor rounded-md px-4 py-1  hover:border-white"
                                 whileHover={{
                                     scale: 1,
                                     textShadow:

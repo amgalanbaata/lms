@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
     return (
         <footer class="bg-myColor ">
-            <div class="mx-auto w-full p-4 py-6 lg:py-8 max-w-96">
+            <div class="mx-auto w-full p-4 py-6 lg:py-12 max-w-96 lg:px-24">
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
                         <a href="" class="flex items-center">

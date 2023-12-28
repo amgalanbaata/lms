@@ -47,7 +47,6 @@ export default function News() {
                                             </i>
                                         </strong>
                                     </motion.button>
-
                                     <p
                                         className={`text-black text-justify sm:w-full p-5 sm:leading-loose sm:text-xl ${
                                             show ? "hidden" : "block"

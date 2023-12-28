@@ -2,14 +2,17 @@
 import Component from "@/components/component";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import News from "@/components/news";
+// import News from "@/components/news";
+// import "bootstrap/dist/css/bootstrap.css";
+import Navigation from "@/components/newNavbar";
 export default function Home() {
     return (
         <main className="">
-            <Navbar />
+            {/* <Navbar /> */}
+            <Navigation />
             <Component />
             <Footer />
-            <News />
+            {/* <News /> */}
         </main>
     );
 }

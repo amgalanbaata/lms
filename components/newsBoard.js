@@ -1,9 +1,5 @@
 "use client";
-import { GiBattleAxe } from "react-icons/gi";
-import { backGround } from "../public/images/backGround.jpeg";
-import Image from "next/image";
-import ImageSlide from "./imageSlide";
-import { motion } from "framer-motion";
+
 export default function NewsBoard() {
     return (
         <div className="w-full h-full bg-myColor">

@@ -23,7 +23,7 @@ export default function ImageSlide() {
                     <h1 className="font-dmserif text-3xl font-bold text-white">
                         Эрхэм зорилго
                     </h1>
-                    <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:text-5xl sm:w-3/4 md:leading-normal sm:py-24">
+                    <p className="mb-5 text-2xl italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:text-5xl sm:w-3/4 md:leading-normal sm:py-24">
                         МЭДЛЭГЭЭРЭЭ БАЯЛАГ БҮТЭЭЖ, МАНЛАЙЛАХ ЧАДВАРТАЙ, ЁС
                         СУРТАХУУНТАЙ МЭРГЭЖИЛТЭН БЭЛТГЭНЭ
                     </p>
