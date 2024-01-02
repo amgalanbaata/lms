@@ -73,7 +73,7 @@ export default function Navigation() {
                 >
                     <div className="hidden md:block text-slate-900 md:mr-5 md:text-xl">
                         <div className="hidden w-full md:block md:w-auto">
-                            <ul className="font-medium flex flex-col p-4 md:p-0  border border-slate-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <ul className="font-medium flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:dark:bg-gray-900 ">
                                 <li>
                                     <a
                                         href="#"
@@ -117,20 +117,20 @@ export default function Navigation() {
                     </div>
                     <div className="flex">
                         <div>
-                            <motion.button
-                                style={{
-                                    background: `rgba(1,42, ${backgroundTransparacy})`,
-                                }}
-                                className="hidden md:mr-4 md:block text-slate-50 bg-bColor hover:bg-myColor rounded-md px-4 py-1  hover:text-white"
-                                whileHover={{
-                                    scale: 1,
-                                    textShadow:
-                                        "0px  0px 2px rgb(255, 255, 255)",
-                                    boxShadow: "0px 0px 2px rgb(255,255,255)",
-                                }}
+                            <button
+                                // style={{
+                                //     background: `rgba(0,00,0, ${backgroundTransparacy})`,
+                                // }}
+                                className="hidden md:mr-4 md:block text-bColor rounded-md px-4 py-1  hover:text-gray-900 font-medium"
+                                // whileHover={{
+                                //     scale: 1,
+                                //     textShadow:
+                                //         "0px  0px 2px rgb(255, 255, 255)",
+                                //     boxShadow: "0px 0px 2px rgb(255,255,255)",
+                                // }}
                             >
-                                Нэвтрэх
-                            </motion.button>
+                                <strong>Нэвтрэх</strong>
+                            </button>
                         </div>
                         <div>
                             <motion.button

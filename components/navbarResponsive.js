@@ -16,7 +16,7 @@ export default function MenuRes() {
                 {myButton ? <GiHamburgerMenu /> : <BiMenuAltLeft />}
             </button>
             <motion.div
-                className={`w-screen items-center text-start grid grid-cols-1 bg-myColor text-gray-50 top-14 rounded-l-2xl absolute right-0 h-60 ${
+                className={`w-screen items-center text-start grid grid-cols-1 text-gray-50 top-14 shadow-xl absolute right-0 h-60 ${
                     myButton ? "hidden" : "block"
                 }`}
             >

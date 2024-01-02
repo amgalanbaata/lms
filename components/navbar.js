@@ -1,9 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import MenuRes from "./navbarResponsive";
-import { useState } from "react";
+// import { useState } from "react";
 export default function Navbar() {
-    const [visible, setVisible] = useState(false);
+    // const [visible, setVisible] = useState(false);
 
     return (
         <nav className=" w-full">

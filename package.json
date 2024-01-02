@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^14.0.4",
     "@react-icons/all-files": "^4.1.0",
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
+    "fonts": "^0.0.2",
     "framer-motion": "^10.16.16",
+    "google": "^2.1.0",
     "next": "14.0.4",
     "next-videos": "^1.4.1",
     "react": "^18",

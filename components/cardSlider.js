@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "../public/images/bg-image.webp";
 import { useState } from "react";
 import { FaHeart } from "react-icons/fa";
+import { FaLongArrowAltRight } from "react-icons/fa";
 export default function CardSlider() {
     const [count, setCount] = useState(0);
 
@@ -28,7 +29,7 @@ export default function CardSlider() {
                         />
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-                    <div className="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                    <div className="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 leading-loose">
                         <h1 className="font-dmserif text-3xl font-bold text-white">
                             Онлайн видео уулзалтууд
                         </h1>
@@ -36,16 +37,9 @@ export default function CardSlider() {
                             Онлайн видео хурлаар дамжуулан илүү сайн харилцаж,
                             нүүр тулсан ярилцлагаар зөвшилцөлд хүрээрэй.
                         </p>
-                        <motion.button
-                            className=" text-slate-50 bg-bColor hover:bg-myColor rounded-full  hover:text-white py-1 px-3.5 font-com text-sm capitalize shadow shadow-black/60"
-                            whileHover={{
-                                scale: 1,
-                                textShadow: "0px  0px 2px rgb(255, 255, 255)",
-                                boxShadow: "0px 0px 2px rgb(255,255,255)",
-                            }}
-                        >
-                            See More
-                        </motion.button>
+                        <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
+                            <strong>See more</strong>
+                        </button>
                         {/* <div className="grid grid-cols-2 gap-2 mx-7 justify-between mt-2">
                             <button
                                 className="text-2xl flex justify-center mt-1"
@@ -78,16 +72,9 @@ export default function CardSlider() {
                             таны сонгосон ямар ч сонголт таны өгөгдлийн аюулгүй
                             байдлыг нэн тэргүүнд тавьж байгаа эсэхийг шалгаарай.
                         </p>
-                        <motion.button
-                            className="hidden md:mr-4 md:block text-slate-50 bg-bColor hover:bg-myColor rounded-full  hover:text-white py-1 px-3.5 font-com text-sm capitalize shadow shadow-black/60"
-                            whileHover={{
-                                scale: 1,
-                                textShadow: "0px  0px 2px rgb(255, 255, 255)",
-                                boxShadow: "0px 0px 2px rgb(255,255,255)",
-                            }}
-                        >
-                            See More
-                        </motion.button>
+                        <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
+                            <strong>See more</strong>
+                        </button>
                     </div>
                 </div>
                 <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 sm:rounded-md">
@@ -109,16 +96,9 @@ export default function CardSlider() {
                             төхөөрөмждөө программ хангамж суулгах шаардлагатай
                             байдаг.
                         </p>
-                        <motion.button
-                            className="hidden md:mr-4 md:block text-slate-50 bg-bColor hover:bg-myColor rounded-full  hover:text-white py-1 px-3.5 font-com text-sm capitalize shadow shadow-black/60"
-                            whileHover={{
-                                scale: 1,
-                                textShadow: "0px  0px 2px rgb(255, 255, 255)",
-                                boxShadow: "0px 0px 2px rgb(255,255,255)",
-                            }}
-                        >
-                            See More
-                        </motion.button>
+                        <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
+                            <strong>See more</strong>
+                        </button>
                     </div>
                 </div>
                 <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 sm:rounded-md">
@@ -138,16 +118,9 @@ export default function CardSlider() {
                             Дэлгэц хуваалцах нь аливаа харилцан ярианд контекст
                             оруулах хүчирхэг хэрэгслийг санал болгодог.
                         </p>
-                        <motion.button
-                            className="hidden md:mr-4 md:block text-slate-50 bg-bColor hover:bg-myColor rounded-full  hover:text-white py-1 px-3.5 font-com text-sm capitalize shadow shadow-black/60"
-                            whileHover={{
-                                scale: 1,
-                                textShadow: "0px  0px 2px rgb(255, 255, 255)",
-                                boxShadow: "0px 0px 2px rgb(255,255,255)",
-                            }}
-                        >
-                            See More
-                        </motion.button>
+                        <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
+                            <strong>See more</strong>
+                        </button>
                     </div>
                 </div>
                 <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-xl sm:rounded-md">
@@ -167,16 +140,9 @@ export default function CardSlider() {
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Facilis dolore adipisci placeat.
                         </p>
-                        <motion.button
-                            className="hidden md:mr-4 md:block text-slate-50 bg-bColor hover:bg-myColor rounded-full  hover:text-white py-1 px-3.5 font-com text-sm capitalize shadow shadow-black/60"
-                            whileHover={{
-                                scale: 1,
-                                textShadow: "0px  0px 2px rgb(255, 255, 255)",
-                                boxShadow: "0px 0px 2px rgb(255,255,255)",
-                            }}
-                        >
-                            See More
-                        </motion.button>
+                        <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
+                            <strong>See more</strong>
+                        </button>
                     </div>
                 </div>
                 <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-xl sm:rounded-md">
@@ -192,21 +158,14 @@ export default function CardSlider() {
                         <h1 className="font-dmserif text-3xl font-bold text-white">
                             Зохицуулагчийн хяналт
                         </h1>
-                        <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        <p className="mb-3 text-lg md:text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                             та хэрэглэгчдийн дууг хаах, хяналтыг бусдад
                             дамжуулах эсвэл хэн нэгний видеог унтраах
                             шаардлагатай байж болно.
                         </p>
-                        <motion.button
-                            className="hidden md:mr-4 md:block text-slate-50 bg-bColor hover:bg-myColor rounded-full  hover:text-white py-1 px-3.5 font-com text-sm capitalize shadow shadow-black/60"
-                            whileHover={{
-                                scale: 1,
-                                textShadow: "0px  0px 2px rgb(255, 255, 255)",
-                                boxShadow: "0px 0px 2px rgb(255,255,255)",
-                            }}
-                        >
-                            See More
-                        </motion.button>
+                        <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
+                            <strong>See more</strong>
+                        </button>
                     </div>
                 </div>
             </div>

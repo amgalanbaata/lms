@@ -10,7 +10,7 @@ export default function MyCarousel() {
             className="relative w-full"
             data-carousel="static"
         >
-            <div class="relative h-[calc(50vh-70px)] sm:h-[calc(70vh-90px)] md:h-[calc(100vh-70px)]  overflow-hidden">
+            <div class="relative h-[calc(50vh-70px)] sm:h-[calc(70vh-90px)] md:h-[calc(50vh-70px)]  overflow-hidden">
                 {/* relative  sm:h-[calc(70vh-70px)] md:h-[calc(100vh-70px)]  overflow-hidden rounded-lg */}
                 <div
                     className="hidden duration-700 ease-in-out h-full"
