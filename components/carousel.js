@@ -19,7 +19,7 @@ export default function MyCarousel() {
                     <video
                         src={require("../public/image/bg-video.mp4")}
                         // src="/images/images1.webp"
-                        className="absolute block w-full h-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        className="absolute block w-full h-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-2/4"
                         alt="..."
                         height={1000}
                         width={1000}
@@ -27,6 +27,10 @@ export default function MyCarousel() {
                         autoPlay
                         muted
                     />
+                    {/* <div className="absolute block text-white w-full h-full right-1/4 bg-stone-400">
+                        <h1>Хамтран ажиллагсад</h1>
+                        <div></div>
+                    </div> */}
                 </div>
                 {/* <!-- Item 2 --> */}
                 <div
@@ -35,7 +39,7 @@ export default function MyCarousel() {
                 >
                     <img
                         src="/images/images2.webp"
-                        className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        className="absolute block w-auto h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         alt="..."
                     />
                 </div>
@@ -46,7 +50,7 @@ export default function MyCarousel() {
                 >
                     <img
                         src="/images/image3.webp"
-                        className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        className="absolute block w-auto h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         alt="..."
                     />
                 </div>
@@ -57,7 +61,7 @@ export default function MyCarousel() {
                 >
                     <img
                         src="/images/images4.webp"
-                        className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        className="absolute block w-auto h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         alt="..."
                     />
                 </div>
@@ -68,7 +72,7 @@ export default function MyCarousel() {
                 >
                     <img
                         src="/images/images5.webp"
-                        className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        className="absolute block w-auto h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         alt="..."
                     />
                 </div>

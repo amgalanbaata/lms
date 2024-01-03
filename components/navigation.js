@@ -5,8 +5,6 @@ import MenuRes from "./navbarResponsive";
 export default function Navigation() {
     const [clientWindowHeight, setClientWindowHeight] = useState("");
     const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
-    const [padding, setPadding] = useState(30);
-    const [boxShadow, setBoxShadow] = useState(0);
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
@@ -18,30 +16,25 @@ export default function Navigation() {
     };
 
     useEffect(() => {
-        let backgroundTransparacyVar = clientWindowHeight / 600;
+        let backgroundTransparacyVar = clientWindowHeight / 1000;
 
         if (backgroundTransparacyVar < 1) {
-            let paddingVar = 30 - backgroundTransparacyVar * 30;
-            let boxShadowVar = backgroundTransparacyVar * 0.1;
             setBackgroundTransparacy(backgroundTransparacyVar);
-            setPadding(paddingVar);
-            setBoxShadow(boxShadowVar);
         }
     }, [clientWindowHeight]);
 
-    console.log("color" + backgroundTransparacy);
+    console.log("color" + " " + backgroundTransparacy);
     return (
         <nav
             className="navbar navbar-expand-lg navbar-light fixed-top"
             style={{
                 background: `rgba(255, 255, 255, ${backgroundTransparacy})`,
-                // padding: `${padding}px 0px`,
-                // boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
             }}
         >
             <div
                 style={{
                     background: `rgba(255, 255, 255, ${backgroundTransparacy})`,
+                    color: `rgba(255,255,255,${backgroundTransparacy})`,
                 }}
                 className={` lg:px-24 w-full fixed z-40  justify-between items-center h-14 sm:h-20 md:h-20 flex shadow-xl md:flex md:justify-between px-4`}
             >
@@ -73,25 +66,30 @@ export default function Navigation() {
                 >
                     <div className="hidden md:block text-slate-900 md:mr-5 md:text-xl">
                         <div className="hidden w-full md:block md:w-auto">
-                            <ul className="font-medium flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:dark:bg-gray-900 ">
+                            <ul
+                                className="font-medium flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:dark:bg-gray-900 "
+                                style={{
+                                    color: `rgba(0,0,0,${backgroundTransparacy})`,
+                                }}
+                            >
                                 <li>
                                     <a
                                         href="#"
-                                        className="block py-2 px-3 text-white bg-bColor rounded md:bg-transparent md:text-bColor md:p-0 hover:underline md:dark:text-bColor"
+                                        className="block py-2 px-3 bg-bColor rounded md:bg-transparent  md:p-0 hover:underline md:dark:text-bColor"
                                         aria-current="page"
                                     >
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                    <a className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                                         About
                                     </a>
                                 </li>
                                 <li>
                                     <a
                                         href="#"
-                                        className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                        className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                     >
                                         Services
                                     </a>
@@ -99,7 +97,7 @@ export default function Navigation() {
                                 <li>
                                     <a
                                         href="#"
-                                        className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                        className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                     >
                                         Pricing
                                     </a>
@@ -107,7 +105,7 @@ export default function Navigation() {
                                 <li>
                                     <a
                                         href="#"
-                                        className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                        className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bColor md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                     >
                                         Contact
                                     </a>
@@ -118,16 +116,16 @@ export default function Navigation() {
                     <div className="flex">
                         <div>
                             <button
-                                // style={{
-                                //     background: `rgba(0,00,0, ${backgroundTransparacy})`,
-                                // }}
-                                className="hidden md:mr-4 md:block text-bColor rounded-md px-4 py-1  hover:text-gray-900 font-medium"
-                                // whileHover={{
-                                //     scale: 1,
-                                //     textShadow:
-                                //         "0px  0px 2px rgb(255, 255, 255)",
-                                //     boxShadow: "0px 0px 2px rgb(255,255,255)",
-                                // }}
+                                style={{
+                                    border: `rgba(0,00,0, ${backgroundTransparacy})`,
+                                }}
+                                className="hidden md:mr-4 md:block text-bColor rounded-md px-4 py-1 hover:text-myColor font-medium"
+                                whileHover={{
+                                    scale: 1,
+                                    textShadow:
+                                        "0px  0px 2px rgb(255, 255, 255)",
+                                    boxShadow: "0px 0px 2px rgb(255,255,255)",
+                                }}
                             >
                                 <strong>Нэвтрэх</strong>
                             </button>

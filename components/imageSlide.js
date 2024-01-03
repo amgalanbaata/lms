@@ -4,12 +4,11 @@ import { motion } from "framer-motion";
 export default function ImageSlide() {
     return (
         <div>
-            <div className="w-full h-24 flex items-center justify-center bg-myColor">
+            <div className="w-full h-24 flex items-center justify-center ">
                 <hr className="w-full bg-gray-100 mr-3 h-0.5 border-0" />
                 <img src="/images/LMS_logo.white.png" width={60} alt="" />
                 <hr className="w-full bg-gray-100 h-0.5 ml-3 border-0" />
             </div>
-
             <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-xl">
                 <div className="h-[100vh] w-full">
                     <img
@@ -35,9 +34,7 @@ export default function ImageSlide() {
                             // boxShadow: "0px 0px 8px rgb(255,255,255)",
                         }}
                     >
-                        <strong>
-                            <i>бидэнтэй холбогдох</i>
-                        </strong>
+                        <strong>бидэнтэй холбогдох</strong>
                     </motion.button>
                 </div>
             </div>

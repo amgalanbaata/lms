@@ -1,6 +1,9 @@
 "use client";
-
+import { useState } from "react";
 export default function NewsBoard() {
+    const [show, setShow] = useState(false);
+
+    console.log("turshilt " + show);
     return (
         <div className="w-full h-full bg-myColor">
             <div className="w-full h-24 flex items-center justify-center bg-myColor">
@@ -9,7 +12,7 @@ export default function NewsBoard() {
                 <hr className="w-full bg-white h-0.5 ml-3 border-0" />
             </div>
 
-            <div className="bg-myColor inline xl:flex items-center h-[100vh">
+            <div className="bg-myColor inline xl:flex items-center h-[100vh inline sm:flex">
                 <div className="text-3xl sm:w-2/4 sm:leading-loose justify-center items-center inline md:p-24 p-3 ">
                     <h1 className="sm:text-4xl text-slate-50 text-2xl md:py-10 text-center font-sans">
                         <strong>
@@ -17,8 +20,14 @@ export default function NewsBoard() {
                         </strong>
                         -д тавтай морил
                     </h1>
-                    <div className="mx-auto md:inline max-w-8xl w-full bg-myColor py-10 md:w-2/4">
-                        <div className=" flex [&:hover>div]:w-16 [&>div:hover]:w-[35rem]">
+                    <div className="mx-auto md:inline max-w-8xl w-full py-10 md:w-2/4">
+                        <div
+                            className={` flex [&:hover> div]:w-24 [&>div:hover]:w-[35rem] ${
+                                show
+                                    ? "flex w-16 duration-500"
+                                    : "flex w-[35rem] duration-500"
+                            }`}
+                        >
                             <div className="group relative h-96 md:h-[70vh] w-[30rem] cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-500">
                                 <img
                                     className="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125"
@@ -93,6 +102,8 @@ export default function NewsBoard() {
                                     className="rounded-r-lg h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125"
                                     src="https://img.freepik.com/free-vector/mobile-phone-with-world-map-infographic_23-2147514327.jpg?w=740&t=st=1703580232~exp=1703580832~hmac=aadbe27ebf5555f96116ccd1608ba8ac2c93b0711cfec9fdf130df9a76131456"
                                     alt=""
+                                    width={500}
+                                    height={500}
                                 />
                                 <div className="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
                                     <div className="absolute inset-x-5 bottom-6">
@@ -114,13 +125,23 @@ export default function NewsBoard() {
                         </div>
                     </div>
                 </div>
-                <img
-                    className="sm:w-3/6"
-                    src="/image/screenShot2.png"
-                    width={500}
-                    height={500}
-                    alt=""
-                />
+                <div className="bg-myColor w-3/6">
+                    <div>
+                        <button onClick={() => setShow(!show)}>
+                            Өндөр чанартай аудио
+                        </button>
+                        <p className={``}>Вебинарын онцлогууд</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    {/* <img
+                        className="w-full"
+                        src="/image/screenShot2.png"
+                        width={800}
+                        height={800}
+                        alt=""
+                    /> */}
+                </div>
             </div>
         </div>
     );

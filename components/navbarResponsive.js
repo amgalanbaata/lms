@@ -5,18 +5,19 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { BiMenuAltLeft } from "react-icons/bi";
 export default function MenuRes() {
     const [myButton, setMyButton] = useState(true);
+
     console.log(myButton);
     return (
         <div className="">
             <button
                 onClick={() => setMyButton(!myButton)}
-                className="text-black
-                text-2xl"
+                className="
+                text-2xl text-black"
             >
                 {myButton ? <GiHamburgerMenu /> : <BiMenuAltLeft />}
             </button>
             <motion.div
-                className={`w-screen items-center text-start grid grid-cols-1 text-gray-50 top-14 shadow-xl absolute right-0 h-60 ${
+                className={`w-screen items-center text-start grid grid-cols-1 text-gray-50 top-13 shadow-xl absolute right-0 h-60 ${
                     myButton ? "hidden" : "block"
                 }`}
             >

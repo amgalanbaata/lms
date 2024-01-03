@@ -2,11 +2,15 @@
 import { motion } from "framer-motion";
 import "../public/images/bg-image.webp";
 import { useState } from "react";
-import { FaHeart } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
+import { AiFillLike } from "react-icons/ai";
+import { Rating } from "./rating";
 export default function CardSlider() {
     const [count, setCount] = useState(0);
-
+    const [rating, setRating] = useState(null);
+    const [hover, setHover] = useState(null);
     console.log(count);
 
     return (
@@ -17,8 +21,8 @@ export default function CardSlider() {
                 <hr className="w-full bg-white h-0.5 ml-3 border-0" />
             </div>
             <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16 sm:p-10 lg:px-24">
-                <h1 className=" text-slate-50 grid sm:col-span-2 lg:col-span-3 text-4xl ml-2">
-                    <strong>Мэдээ мэдээлэл</strong>
+                <h1 className=" text-slate-50 grid sm:col-span-2 lg:col-span-3 text-4xl ml-2 font-sans">
+                    Мэдээ мэдээлэл
                 </h1>
                 <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-xl sm:rounded-md">
                     <div className="h-96">
@@ -37,22 +41,25 @@ export default function CardSlider() {
                             Онлайн видео хурлаар дамжуулан илүү сайн харилцаж,
                             нүүр тулсан ярилцлагаар зөвшилцөлд хүрээрэй.
                         </p>
-                        <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
+                        <button className="text-bColor  hover:text-white text-base flex items-center justify-center hover:underline">
                             <strong>See more</strong>
                         </button>
                         {/* <div className="grid grid-cols-2 gap-2 mx-7 justify-between mt-2">
                             <button
-                                className="text-2xl flex justify-center mt-1"
+                                className="text-2xl flex justify-center mt-1 text-center items-center"
                                 onClick={() =>
                                     setCount(!count ? count + 1 : count - 1)
                                 }
                             >
-                                <FaHeart
-                                    className={`${count ? "text-red-700" : ""}`}
+                                <AiFillLike
+                                    className={`${
+                                        count ? "text-blue-700" : ""
+                                    }`}
                                 />
                             </button>
-                            <p className="text-xl">{count}</p>
+                            <p className="text-xl mt-1">{count}</p>
                         </div> */}
+                        <Rating />
                     </div>
                 </div>
                 <div className=" group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 sm:rounded-md">
@@ -75,6 +82,7 @@ export default function CardSlider() {
                         <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
                             <strong>See more</strong>
                         </button>
+                        <Rating />
                     </div>
                 </div>
                 <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 sm:rounded-md">
@@ -99,6 +107,7 @@ export default function CardSlider() {
                         <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
                             <strong>See more</strong>
                         </button>
+                        <Rating />
                     </div>
                 </div>
                 <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 sm:rounded-md">
@@ -121,6 +130,7 @@ export default function CardSlider() {
                         <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
                             <strong>See more</strong>
                         </button>
+                        <Rating />
                     </div>
                 </div>
                 <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-xl sm:rounded-md">
@@ -143,6 +153,7 @@ export default function CardSlider() {
                         <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
                             <strong>See more</strong>
                         </button>
+                        <Rating />
                     </div>
                 </div>
                 <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 shadow-xl sm:rounded-md">
@@ -166,6 +177,7 @@ export default function CardSlider() {
                         <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
                             <strong>See more</strong>
                         </button>
+                        <Rating />
                     </div>
                 </div>
             </div>
