@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function ImageSlide() {
     return (
         <div>
-            <div className="w-full h-24 flex items-center justify-center ">
+            <div className="w-full h-24 flex items-center justify-center bg-myColor">
                 <hr className="w-full bg-gray-100 mr-3 h-0.5 border-0" />
                 <img src="/images/LMS_logo.white.png" width={60} alt="" />
                 <hr className="w-full bg-gray-100 h-0.5 ml-3 border-0" />

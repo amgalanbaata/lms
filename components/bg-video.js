@@ -3,7 +3,7 @@ import { Roboto_Slab } from "next/dist/compiled/@next/font/dist/google";
 
 export default function BgVideo(roboto) {
     return (
-        <div className="flex h-[calc(50vh-70px)] sm:h-[calc(70vh-90px)] w-full md:h-screen  overflow-hidden bg-black">
+        <div className="h-[calc(50vh-70px)] sm:h-[calc(70vh-90px)] w-full md:h-screen  overflow-hidden bg-black">
             <video
                 className="h-full w-screen"
                 src={require("../public/image/bg-video12.mp4")}

@@ -11,10 +11,10 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                bColor: "#166271",
-                myColor: "#2E526C",
-                // bColor: "#274C77",
-                // myColor: "#012A4A",
+                // bColor: "#166271",
+                // myColor: "#2E526C",
+                bColor: "#274C77",
+                myColor: "#012A4A",
                 backgroundImage: {
                     "gradient-radial":
                         "radial-gradient(var(--tw-gradient-stops))",

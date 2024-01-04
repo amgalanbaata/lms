@@ -41,7 +41,7 @@ export default function CardSlider() {
                             Онлайн видео хурлаар дамжуулан илүү сайн харилцаж,
                             нүүр тулсан ярилцлагаар зөвшилцөлд хүрээрэй.
                         </p>
-                        <button className="text-bColor  hover:text-white text-base flex items-center justify-center hover:underline">
+                        <button className="text-blue-500  hover:text-white text-base flex items-center justify-center hover:underline">
                             <strong>See more</strong>
                         </button>
                         {/* <div className="grid grid-cols-2 gap-2 mx-7 justify-between mt-2">

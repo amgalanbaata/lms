@@ -1,7 +1,7 @@
 import NewsBoard from "./newsBoard";
 import ImageSlide from "./imageSlide";
 import MySlider from "./slide";
-import MyCarousel from "./carousel";
+// import MyCarousel from "./carousel";
 import CardSlider from "./cardSlider";
 import BgVideo from "./bg-video";
 export default function Component() {
@@ -12,7 +12,7 @@ export default function Component() {
             <CardSlider />
             <ImageSlide />
             <MySlider />
-            <MyCarousel />
+            {/* <MyCarousel /> */}
         </div>
     );
 }
