@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import MenuRes from "./navbarResponsive";
-export default function Navigation() {
+import NavbarRes from "./navbarResponsive";
+export default function Navbar() {
     const [clientWindowHeight, setClientWindowHeight] = useState("");
     const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
 
@@ -155,7 +155,7 @@ export default function Navigation() {
                     animate="visible"
                     transition={{ duration: 0.5, delay: 0.25 }}
                 >
-                    <MenuRes />
+                    <NavbarRes />
                 </motion.div>
             </div>
         </nav>

@@ -1,11 +1,11 @@
 // import Image from "next/image";
 import Component from "@/components/component";
 import Footer from "@/components/footer";
-import Navigation from "@/components/navigation";
+import Navbar from "@/components/navbar";
 export default function Home() {
     return (
         <main className="">
-            <Navigation />
+            <Navbar />
             <Component />
             <Footer />
         </main>

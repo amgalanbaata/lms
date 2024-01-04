@@ -131,10 +131,10 @@ export default function NewsBoard() {
                         <p></p>
                     </div> */}
                     <img
-                        className="w-full"
+                        className="w-full lg:w-5/6"
                         src="/image/screenShot2.png"
-                        width={800}
-                        height={800}
+                        width={600}
+                        height={600}
                         alt=""
                     />
                 </div>

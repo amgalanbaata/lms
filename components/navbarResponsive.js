@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BiMenuAltLeft } from "react-icons/bi";
-export default function MenuRes() {
+export default function NavbarRes() {
     const [myButton, setMyButton] = useState(true);
 
     console.log(myButton);
